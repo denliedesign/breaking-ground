@@ -1,0 +1,98 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#socials ion-icon  {
+    background: #d33;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+}
+
+#socials ion-icon:hover {
+    color: #d33;
+    background: white;
+}
+
+#bgdc-nav-items a:hover {
+    color: #d33;
+    text-decoration: underline;
+}
+
+#testimonial-bg-wrap {
+    height: 335px;
+}
+
+#testimonial-bg {
+    background-image: url("/images/testimonial-bg.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#carousel-testimonial-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+#carouselTestimonial {
+    height: 100%;
+}
+
+.pages-heading {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+#parties-form {
+    width: 100%;
+    max-width: 500px;
+    height: 100vh;
+    max-height: 750px;
+}
+
+.main-button {
+    background: #32373c;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.25em;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.main-button:hover {
+    background: #333;
+    color: white;
+
+}
+
+.table-head {
+    background: #d33;
+    color: white;
+}
+
+.table-title {
+    color: #d33;
+}
+
+.instructor-title {
+    font-size: 1.33em;
+    color: #666;
+    font-weight: lighter;
+}
+
+.acc-btn {
+    font-size: 0.6em;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
