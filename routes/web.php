@@ -70,6 +70,10 @@ Route::post('/faq', function () {
     return view('faq');
 });
 
+Route::get('/news', function () {
+    return view('/news');
+});
+
 Route::resource('texts', TextController::class);
 Route::resource('photos', PhotoController::class);
 Route::resource('tables', TableController::class);
