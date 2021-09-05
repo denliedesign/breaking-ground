@@ -74,6 +74,14 @@ Route::get('/news', function () {
     return view('/news');
 });
 
+Route::get('connect', function () {
+    return view('connect');
+});
+
+Route::post('connect', function () {
+    return view('connect');
+});
+
 Route::resource('texts', TextController::class);
 Route::resource('photos', PhotoController::class);
 Route::resource('tables', TableController::class);
