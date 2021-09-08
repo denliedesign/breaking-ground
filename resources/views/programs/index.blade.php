@@ -17,7 +17,7 @@
         <!-- first section -->
 
         <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Programs</span></h1>
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
             @foreach($programs as $program)
                 @if($program->category == 'program')
                     <div class="col-sm text-center">
@@ -35,7 +35,7 @@
         <!-- next section -->
 
         <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Intensive</span></h1>
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
             @foreach($programs as $program)
                 @if($program->category == 'intensive')
                     <div class="col-sm text-center">
@@ -51,42 +51,42 @@
         </div>
     </div>
 
-    <!-- next section -->
+{{--    <!-- next section -->--}}
 
-    <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Performing Ensemble</span></h1>
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
-        @foreach($programs as $program)
-            @if($program->category == 'ensemble')
-                <div class="col-sm text-center">
-                    <div>
-                        <a href="/programs/{{ $program->id }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>
-                        <h3>{{ $program->programTitle }}</h3>
-                        <p>{{ $program->programAge }}</p>
-                        @include('/programs/admin')
-                    </div>
-                </div>
-            @endif
-        @endforeach
-    </div>
-    </div>
+{{--    <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Performing Ensemble</span></h1>--}}
+{{--    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">--}}
+{{--        @foreach($programs as $program)--}}
+{{--            @if($program->category == 'ensemble')--}}
+{{--                <div class="col-sm text-center">--}}
+{{--                    <div>--}}
+{{--                        <a href="/programs/{{ $program->id }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>--}}
+{{--                        <h3>{{ $program->programTitle }}</h3>--}}
+{{--                        <p>{{ $program->programAge }}</p>--}}
+{{--                        @include('/programs/admin')--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            @endif--}}
+{{--        @endforeach--}}
+{{--    </div>--}}
+{{--    </div>--}}
 
-    <!-- next section -->
+{{--    <!-- next section -->--}}
 
-    <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Competitive Company</span></h1>
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3">
-        @foreach($programs as $program)
-            @if($program->category == 'company')
-                <div class="col-sm text-center">
-                    <div>
-                        <a href="/programs/{{ $program->id }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>
-                        <h3>{{ $program->programTitle }}</h3>
-                        <p>{{ $program->programAge }}</p>
-                        @include('/programs/admin')
-                    </div>
-                </div>
-            @endif
-        @endforeach
-    </div>
+{{--    <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Competitive Company</span></h1>--}}
+{{--    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">--}}
+{{--        @foreach($programs as $program)--}}
+{{--            @if($program->category == 'company')--}}
+{{--                <div class="col-sm text-center">--}}
+{{--                    <div>--}}
+{{--                        <a href="/programs/{{ $program->id }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>--}}
+{{--                        <h3>{{ $program->programTitle }}</h3>--}}
+{{--                        <p>{{ $program->programAge }}</p>--}}
+{{--                        @include('/programs/admin')--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            @endif--}}
+{{--        @endforeach--}}
+{{--    </div>--}}
 
     @include('attire')
 

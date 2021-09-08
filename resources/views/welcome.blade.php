@@ -123,7 +123,7 @@
                     @if($photo->photoName == 'welcome' && $photo->photoSection == 'A')
                         <div class="col d-flex justify-content-center">
                             <div>
-                                <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="max-height: 200px; width: auto;">
+                                <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="max-height: 125px; width: auto;">
                                 @include('/photos/admin')
                             </div>
                         </div>

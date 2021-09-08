@@ -22,9 +22,22 @@
                     <div class="card mb-4">
                         <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" class="img-fluid">
                         <div class="card-body p-2">
-                            <strong>{{ $combo->comboTitle }}</strong>
-                            <br>
-                            {{ $combo->comboContent }}
+                            <!-- accordion -->
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <div class="acc-btn" data-bs-toggle="collapse" data-bs-target="#{{ $combo->comboTag }}" aria-expanded="true" aria-controls="{{ $combo->comboTag }}">
+                                            {{ $combo->comboTitle }}
+                                        </div>
+                                    </h2>
+                                    <div id="{{ $combo->comboTag }}" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body p-2">
+                                            {!! $combo->comboContent !!}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion -->
                         </div>
                         @include('/combos/admin')
                     </div>

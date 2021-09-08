@@ -24,7 +24,7 @@
                     <button class="nav-link" id="tuition-tab" data-bs-toggle="tab" data-bs-target="#tuition" type="button" role="tab" aria-controls="tuition" aria-selected="false">Tuition</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false">FAQ</button>
+                    <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faqs" type="button" role="tab" aria-controls="faqs" aria-selected="false">FAQ</button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -93,16 +93,16 @@
                         <!-- END TABLE CONTROL -->
                     </div>
                 </div>
-                <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
+                <div class="tab-pane fade" id="faqs" role="tabpanel" aria-labelledby="faq-tab">
                     @can('update', \App\Text::class)
                         <div id="faq-text-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
-                            <span class="fw-bold mx-3">faq text section b</span>
+                            <span class="fw-bold mx-3">faq text section B</span>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#txtModal"
                                     onClick="AddTextName('faq'); AddTextSection('B');">
                                 Create New
                             </button>
-                            @include('/texts/form')
+                            @include('/texts/form-two')
                         </div>
                     @endcan
                     @foreach($texts as $text)
@@ -118,10 +118,10 @@
             <!-- end tabs -->
 
 
-            <div class="d-flex justify-content-center my-4">
-                <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
-                <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
-            </div>
+{{--            <div class="d-flex justify-content-center my-4">--}}
+{{--                <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>--}}
+{{--                <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>--}}
+{{--            </div>--}}
 
         </div>
     </div>
