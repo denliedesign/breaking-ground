@@ -6,8 +6,8 @@
                     <select class="form-control" name="category" id="category">
                         <option value="program">Program</option>
                         <option value="intensive">Intensive</option>
-                        <option value="ensemble">Performing Ensemble</option>
-                        <option value="company">Competitive Company</option>
+{{--                        <option value="ensemble">Performing Ensemble</option>--}}
+{{--                        <option value="company">Competitive Company</option>--}}
                     </select>
                 </div>
                 <div class="form-group">

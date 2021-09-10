@@ -17,7 +17,7 @@
                 </div>
             @endif
 
-            @if($code == 'BGDCfamily')
+            @if($code == 'BGDC2022')
                 @include('live-stream')
             @else
                 <div style="height: 100%;" class="d-flex align-items-center justify-content-center text-center">
