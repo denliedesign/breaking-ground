@@ -77,7 +77,7 @@
                             <span class="fw-bold mx-3">beautiful beginnings table section</span>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
-                                    onClick="AddTableName('programs'); AddTableSection('BB');">
+                                    onClick="AddTableName('programs'); AddTableSection('Z');">
                                 Add New Row
                             </button>
                             @include('/tables/form')
@@ -86,7 +86,7 @@
                     <table class="table">
                         <tbody>
                         @foreach($tables as $table)
-                            @if($table->tableName == 'programs' && $table->tableSection == "BB")
+                            @if($table->tableName == 'programs' && $table->tableSection == "Z")
                                 <h2 class="table-title">{{ $table->title }}</h2>
                                 @if($table->head1 == true)
                                     <tr class="table-head">
