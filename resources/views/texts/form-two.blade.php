@@ -21,7 +21,7 @@
                 <div class="form-group">
                     <label for="content">Text Content</label>
                     <textarea name="content" cols="30" rows="10" class="form-control"
-                              id="text-textarea"></textarea>
+                              id="txt-textarea"></textarea>
                     <div>{{ $errors->first('content') }}</div>
                 </div>
 
