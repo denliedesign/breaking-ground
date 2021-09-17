@@ -27,44 +27,90 @@
                 <p>{!! $program->programDescription !!}</p>
             </div>
 
-        <!-- TABLE CONTROL -->
-        @can('update', \App\Table::class)
-            <div id="programs-table" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
-                <span class="fw-bold mx-3">programs table section</span>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
-                        onClick="AddTableName('programs'); AddTableSection('{{ $program->id }}');">
-                    Add New Row
-                </button>
-                @include('/tables/form')
-            </div>
-        @endcan
 
-        <table class="table">
-            <tbody>
-            @foreach($tables as $table)
-                @if($table->tableName == 'programs' && $table->tableSection == "$program->id")
-                    <h2 class="table-title">{{ $table->title }}</h2>
-                    @if($table->head1 == true)
-                        <tr class="table-head">
-                            <th>{{ $table->head1 }}</th>
-                            <th>{{ $table->head2 }}</th>
-                            <th>{{ $table->head3 }}</th>
-                            <th>{{ $table->head4 }}</th>
-                        </tr>
-                    @endif
-                    <tr>
-                        <td>{{ $table->col1 }}</td>
-                        <td>{{ $table->col2 }}</td>
-                        <td>{{ $table->col3 }}</td>
-                        <td>{{ $table->col4 }}</td>
-                        <td>@include('/tables/admin')</td>
-                    </tr>
-                @endif
-            @endforeach
-            </tbody>
-        </table>
-        <!-- END TABLE CONTROL -->
+
+        <div class="row">
+            <div class="col-sm">
+                <!-- TABLE CONTROL -->
+                @can('update', \App\Table::class)
+                    <div id="programs-table" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                        <span class="fw-bold mx-3">programs table section</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
+                                onClick="AddTableName('programs'); AddTableSection('{{ $program->id }}');">
+                            Add New Row
+                        </button>
+                        @include('/tables/form')
+                    </div>
+                @endcan
+                <table class="table">
+                    <tbody>
+                    @foreach($tables as $table)
+                        @if($table->tableName == 'programs' && $table->tableSection == "$program->id")
+                            <h2 class="table-title">{{ $table->title }}</h2>
+                            @if($table->head1 == true)
+                                <tr class="table-head">
+                                    <th>{{ $table->head1 }}</th>
+                                    <th>{{ $table->head2 }}</th>
+                                    <th>{{ $table->head3 }}</th>
+                                    <th>{{ $table->head4 }}</th>
+                                </tr>
+                            @endif
+                            <tr>
+                                <td>{{ $table->col1 }}</td>
+                                <td>{{ $table->col2 }}</td>
+                                <td>{{ $table->col3 }}</td>
+                                <td>{{ $table->col4 }}</td>
+                                <td>@include('/tables/admin')</td>
+                            </tr>
+                        @endif
+                    @endforeach
+                    </tbody>
+                </table>
+                <!-- END TABLE CONTROL -->
+            </div>
+            @if($program->id == 3)
+                <div class="col-sm">
+                    <!-- TABLE CONTROL -->
+                    @can('update', \App\Table::class)
+                        <div id="programs-table-b" style="border:2px solid green;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">beautiful beginnings table section</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
+                                    onClick="AddTableName('programs'); AddTableSection('BB');">
+                                Add New Row
+                            </button>
+                            @include('/tables/form')
+                        </div>
+                    @endcan
+                    <table class="table">
+                        <tbody>
+                        @foreach($tables as $table)
+                            @if($table->tableName == 'programs' && $table->tableSection == "BB")
+                                <h2 class="table-title">{{ $table->title }}</h2>
+                                @if($table->head1 == true)
+                                    <tr class="table-head">
+                                        <th>{{ $table->head1 }}</th>
+                                        <th>{{ $table->head2 }}</th>
+                                        <th>{{ $table->head3 }}</th>
+                                        <th>{{ $table->head4 }}</th>
+                                    </tr>
+                                @endif
+                                <tr>
+                                    <td>{{ $table->col1 }}</td>
+                                    <td>{{ $table->col2 }}</td>
+                                    <td>{{ $table->col3 }}</td>
+                                    <td>{{ $table->col4 }}</td>
+                                    <td>@include('/tables/admin')</td>
+                                </tr>
+                            @endif
+                        @endforeach
+                        </tbody>
+                    </table>
+                    <!-- END TABLE CONTROL -->
+                </div>
+            @endif
+        </div>
 
         @include('register')
 
