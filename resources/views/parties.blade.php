@@ -33,9 +33,9 @@
             @endforeach
             <!-- END IMAGE CONTROL -->
 
-            <div class="d-flex justify-content-center my-5">
-                <img src="/images/parties-bgdc.png" alt="parties brochure" class="img-fluid">
-            </div>
+{{--            <div class="d-flex justify-content-center my-5">--}}
+{{--                <img src="/images/parties-bgdc.png" alt="parties brochure" class="img-fluid">--}}
+{{--            </div>--}}
 
             @can('update', \App\Text::class)
                 <div id="parties-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">

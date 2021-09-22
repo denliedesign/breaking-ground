@@ -9,7 +9,7 @@
         <div class="py-5">
 
             <h1 class="text-center"><span class="pages-heading px-5 py-3">Register & FAQ</span></h1>
-            <div class="d-flex justify-content-center my-4">
+            <div class="d-flex justify-content-center my-5">
                 <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
                 <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
             </div>
