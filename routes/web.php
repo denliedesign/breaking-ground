@@ -82,12 +82,12 @@ Route::get('/news', function () {
     return view('/news');
 });
 
-Route::get('livestream', function () {
-    return view('livestream');
+Route::get('studio-livestream', function () {
+    return view('studio-livestream');
 });
 
-Route::post('livestream', function () {
-    return view('livestream');
+Route::post('studio-livestream', function () {
+    return view('studio-livestream');
 });
 
 Route::resource('texts', TextController::class);
