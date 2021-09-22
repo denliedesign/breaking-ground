@@ -38,6 +38,14 @@ Route::post('/events', function () {
     return view('events');
 });
 
+Route::get('/calendar', function () {
+    return view('calendar');
+});
+
+Route::post('/calendar', function () {
+    return view('calendar');
+});
+
 Route::get('/aboutus', function () {
     return view('aboutus');
 });

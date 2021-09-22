@@ -9,7 +9,7 @@
         <div class="py-5">
 
             <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">BG Parties!</span></h1>
-            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>
+{{--            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>--}}
 
             <!-- IMAGE CONTROL -->
             @can('update', \App\Photo::class)
@@ -34,7 +34,7 @@
             <!-- END IMAGE CONTROL -->
 
             <div class="d-flex justify-content-center my-5">
-                <iframe id="parties-form" src="https://docs.google.com/forms/d/e/1FAIpQLScqXI4ZogG9i26ykZLZSbt7W2jdOwWVM6wl90_JUqkRtPOkHA/viewform?embedded=true&usp=embed_googleplus"></iframe>
+                <img src="/images/parties-bgdc.png" alt="parties brochure" class="img-fluid">
             </div>
 
             @can('update', \App\Text::class)

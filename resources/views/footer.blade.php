@@ -35,7 +35,7 @@
                         <h4 style="text-decoration: underline;">Contact Us</h4>
                         <br>
                         <ion-icon name="mail"></ion-icon>
-                        breakinggrounddance@hotmail.com
+                    <a class="text-white" style="text-decoration: none;" href="mailto:breakinggrounddance@hotmail.com">breakinggrounddance@hotmail.com</a>
                         <br><br>
                         <ion-icon name="call"></ion-icon>
                         914-747-3150

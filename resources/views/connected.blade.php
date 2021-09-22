@@ -35,7 +35,7 @@
                 </div>
                 <div class="col-sm">
                     Studio 6
-                    <iframe type="text/html" frameborder="0" width="100%" height="394" src="//video.nest.com/embedded/live/sRXzp5nks0?autoplay=1" allowfullscreen></iframe>
+                    <iframe type="text/html" frameborder="0" width="100%" height="394" src="//video.nest.com/embedded/live/HqkotKib8T?autoplay=1" allowfullscreen></iframe>
                 </div>
             </div>
 

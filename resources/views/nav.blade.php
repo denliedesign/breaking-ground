@@ -28,7 +28,10 @@
                         <a class="nav-link" href="/livestream">Live Stream</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/events">Calendar</a>
+                        <a class="nav-link" href="/calendar">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/events">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/news">News</a>

@@ -1,6 +1,13 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Nunito Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     font-size: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Halant', serif;
 }
 
 #footer {
@@ -103,11 +110,12 @@ body {
 }
 
 .event-odd-bg {
-    background: ghostwhite;
+    background: #dd3333;
+    color: white;
 }
 
 .event-odd-bg:nth-child(odd) {
-    background: #dd3333;
-    color: white;
+    background: white;
+    color: black;
 }
 
