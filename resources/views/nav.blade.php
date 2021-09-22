@@ -25,7 +25,7 @@
                         <a class="nav-link" href="/faq">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/livestream">Live Stream</a>
+                        <a class="nav-link" href="/studio-livestream">Live Stream</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/calendar">Calendar</a>
