@@ -18,10 +18,10 @@
             @endif
 
             @if($code == 'BGDC2022')
-                @include('live-stream')
+                @include('connected')
             @else
                 <div style="height: 100%;" class="d-flex align-items-center justify-content-center text-center">
-                    <form method="post" action="connect" style="border: 1px solid silver; border-radius: 10px;" class="p-5">
+                    <form method="post" action="livestream" style="border: 1px solid silver; border-radius: 10px;" class="p-5">
                         <div class="form-inline">
                             <div class="form-group">
                                 <label for="code">Password</label>

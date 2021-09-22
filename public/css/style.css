@@ -1,5 +1,10 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+#footer {
+    font-size: 0.8em;
 }
 
 #socials ion-icon  {
@@ -20,7 +25,7 @@ body {
 }
 
 #testimonial-bg-wrap {
-    height: 335px;
+    height: 390px;
 }
 
 #testimonial-bg {
@@ -96,3 +101,13 @@ body {
     text-align: center;
     cursor: pointer;
 }
+
+.event-odd-bg {
+    background: ghostwhite;
+}
+
+.event-odd-bg:nth-child(odd) {
+    background: #dd3333;
+    color: white;
+}
+

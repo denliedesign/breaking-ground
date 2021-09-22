@@ -26,6 +26,9 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faqs" type="button" role="tab" aria-controls="faqs" aria-selected="false">FAQ</button>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#fittings" type="button" role="tab" aria-controls="fittings" aria-selected="false">Fittings</button>
+                </li>
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="inclusive" role="tabpanel" aria-labelledby="inclusive-tab">
@@ -114,6 +117,11 @@
                         @endif
                     @endforeach
                 </div>
+
+                <div class="tab-pane fade" id="fittings" role="tabpanel" aria-labelledby="fittings-tab">
+                    <iframe src="https://letsmeet.io/breakinggrounddancecenter1/dancewear-fitting" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen=""></iframe>
+                </div>
+
             </div>
             <!-- end tabs -->
 

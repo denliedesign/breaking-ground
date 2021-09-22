@@ -1,6 +1,6 @@
 <div style="background: #333; color: white;">
     <div class="container">
-        <div class="row py-2" id="top-nav">
+        <div class="row pt-3 pb-2" id="top-nav">
             <div class="col-sm" style="font-size: 0.85em;">
                 <ion-icon name="mail"></ion-icon> breakinggrounddance@hotmail.com
                 &nbsp;<ion-icon name="call"></ion-icon> 914-747-3150

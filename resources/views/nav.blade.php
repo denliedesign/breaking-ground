@@ -1,5 +1,5 @@
 <div class="container d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
                 <img src="/images/bgdc-logo.png" alt="logo" class="img-fluid">
@@ -25,7 +25,7 @@
                         <a class="nav-link" href="/faq">Registration</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/connect">Live Stream</a>
+                        <a class="nav-link" href="/livestream">Live Stream</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/events">Calendar</a>

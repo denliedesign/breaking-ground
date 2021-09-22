@@ -30,7 +30,7 @@
                 @endif
             @endforeach
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Meet Our Dream Team!</span></h1>
+            <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">Meet Our Dream Team!</span></h1>
 
             <!-- IMAGE CONTROL -->
             @can('update', \App\Combo::class)

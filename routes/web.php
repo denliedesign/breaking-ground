@@ -74,12 +74,12 @@ Route::get('/news', function () {
     return view('/news');
 });
 
-Route::get('connect', function () {
-    return view('connect');
+Route::get('livestream', function () {
+    return view('livestream');
 });
 
-Route::post('connect', function () {
-    return view('connect');
+Route::post('livestream', function () {
+    return view('livestream');
 });
 
 Route::resource('texts', TextController::class);
