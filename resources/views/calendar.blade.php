@@ -54,46 +54,46 @@
                     <!-- END TABLE CONTROL -->
                 </div>
 
-                <div class="col-sm">
-                    <!-- TABLE CONTROL -->
-                    @can('update', \App\Table::class)
-                        <div id="events-table-b" style="border:2px solid yellow;" class="my-3 py-1 rounded shadow">
-                            <span class="fw-bold mx-3">events table section B</span>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
-                                    onClick="AddTableName('events'); AddTableSection('B');">
-                                Add New Row
-                            </button>
-                            @include('/tables/form')
-                        </div>
-                    @endcan
+{{--                <div class="col-sm">--}}
+{{--                    <!-- TABLE CONTROL -->--}}
+{{--                    @can('update', \App\Table::class)--}}
+{{--                        <div id="events-table-b" style="border:2px solid yellow;" class="my-3 py-1 rounded shadow">--}}
+{{--                            <span class="fw-bold mx-3">events table section B</span>--}}
+{{--                            <!-- Button trigger modal -->--}}
+{{--                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"--}}
+{{--                                    onClick="AddTableName('events'); AddTableSection('B');">--}}
+{{--                                Add New Row--}}
+{{--                            </button>--}}
+{{--                            @include('/tables/form')--}}
+{{--                        </div>--}}
+{{--                    @endcan--}}
 
-                    <table class="table">
-                        <tbody>
-                        @foreach($tables as $table)
-                            @if($table->tableName == 'events' && $table->tableSection == 'B')
-                                <h2 class="table-title text-center">{{ $table->title }}</h2>
-                                @if($table->head1 == true)
-                                    <tr class="table-head">
-                                        <th>{{ $table->head1 }}</th>
-                                        <th>{{ $table->head2 }}</th>
-                                        <th>{{ $table->head3 }}</th>
-                                        <th>{{ $table->head4 }}</th>
-                                    </tr>
-                                @endif
-                                <tr>
-                                    <td>{{ $table->col1 }}</td>
-                                    <td>{{ $table->col2 }}</td>
-                                    <td>{{ $table->col3 }}</td>
-                                    <td>{{ $table->col4 }}</td>
-                                    <td>@include('/tables/admin')</td>
-                                </tr>
-                            @endif
-                        @endforeach
-                        </tbody>
-                    </table>
-                    <!-- END TABLE CONTROL -->
-                </div>
+{{--                    <table class="table">--}}
+{{--                        <tbody>--}}
+{{--                        @foreach($tables as $table)--}}
+{{--                            @if($table->tableName == 'events' && $table->tableSection == 'B')--}}
+{{--                                <h2 class="table-title text-center">{{ $table->title }}</h2>--}}
+{{--                                @if($table->head1 == true)--}}
+{{--                                    <tr class="table-head">--}}
+{{--                                        <th>{{ $table->head1 }}</th>--}}
+{{--                                        <th>{{ $table->head2 }}</th>--}}
+{{--                                        <th>{{ $table->head3 }}</th>--}}
+{{--                                        <th>{{ $table->head4 }}</th>--}}
+{{--                                    </tr>--}}
+{{--                                @endif--}}
+{{--                                <tr>--}}
+{{--                                    <td>{{ $table->col1 }}</td>--}}
+{{--                                    <td>{{ $table->col2 }}</td>--}}
+{{--                                    <td>{{ $table->col3 }}</td>--}}
+{{--                                    <td>{{ $table->col4 }}</td>--}}
+{{--                                    <td>@include('/tables/admin')</td>--}}
+{{--                                </tr>--}}
+{{--                            @endif--}}
+{{--                        @endforeach--}}
+{{--                        </tbody>--}}
+{{--                    </table>--}}
+{{--                    <!-- END TABLE CONTROL -->--}}
+{{--                </div>--}}
 
             </div>
         </div>

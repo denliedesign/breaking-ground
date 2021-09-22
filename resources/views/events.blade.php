@@ -29,6 +29,7 @@
         </div>
     </div>
 
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 m-0 p-0">
     @foreach($combos as $combo)
         @if($combo->comboName == 'events' && $combo->comboSection == 'C')
             <div class="event-odd-bg pt-5">
@@ -51,5 +52,6 @@
         @endif
     @endforeach
     <!-- END IMAGE CONTROL -->
+    </div>
 
 @endsection
