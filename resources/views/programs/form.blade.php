@@ -1,6 +1,12 @@
  <!-- FORM -->
             <form action="/programs" method="POST" enctype="multipart/form-data">
 
+                <div class="form-group text-muted mb-3" style="font-size: 0.75em;">
+                    <label for="id">Order Number</label>
+                    <input id="id" type="text" class="form-control text-muted" name="id" style="font-size: 0.75em;"
+                           value="{{ old('id', $program->id) }}">
+                    <div>{{ $errors->first('id') }}</div>
+                </div>
                 <div class="form-group">
                     <label for="category">Category</label>
                     <select class="form-control" name="category" id="category">

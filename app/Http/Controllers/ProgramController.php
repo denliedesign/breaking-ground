@@ -96,6 +96,7 @@ class ProgramController extends Controller
     private function validateRequest()
     {
         return request()->validate([
+            'id' => 'required',
             'category' => 'required',
             'programImage' => 'nullable|file|image|max:200000',
             'programTitle' => 'required',
