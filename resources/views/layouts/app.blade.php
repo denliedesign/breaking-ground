@@ -17,8 +17,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         <style>
             /*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@500&display=swap');*/
-            @import url('https://fonts.googleapis.com/css2?family=Halant:wght@500&family=Nunito+Sans&display=swap');
+            /*@import url('https://fonts.googleapis.com/css2?family=Halant:wght@500&family=Nunito+Sans&display=swap');*/
             @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
         </style>
 
         <!-- Styles -->
