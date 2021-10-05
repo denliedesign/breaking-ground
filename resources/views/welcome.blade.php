@@ -52,7 +52,7 @@
         </button>
     </div>
 
-    <div class="container">
+    <div class="mx-3">
         <!-- WELCOME COMBO CONTROL -->
         @can('update', \App\Combo::class)
             <div id="welcome-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
@@ -73,11 +73,11 @@
                         <div class="col-sm">
                             <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" class="img-fluid">
                         </div>
-                        <div class="col-sm">
-                            <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
-
-                            {!! $combo->comboContent !!}
-
+                        <div class="col-sm d-flex align-items-center mx-3">
+                            <div>
+                                <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
+                                {!! $combo->comboContent !!}
+                            </div>
                         </div>
                     </div>
                 @endif

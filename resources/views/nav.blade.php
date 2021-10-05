@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-center mx-0">
+<div class="d-flex justify-content-center mx-0" id="navigations">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">
@@ -50,3 +50,17 @@
         </div>
     </nav>
 </div>
+
+<style>
+    @media screen and (min-width: 1600px) {
+        #navigations {
+            font-size: 1.25em;
+        }
+    }
+
+    @media screen and (min-width: 2000px) {
+        #navigations {
+            font-size: 1.6em;
+        }
+    }
+</style>
