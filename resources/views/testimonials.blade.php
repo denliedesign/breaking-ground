@@ -1,6 +1,6 @@
 <div>
 
-    <div id="testimonial-bg-wrap" style="font-family: 'Courgette', cursive;">
+    <div id="testimonial-bg-wrap" style="font-family: 'Playfair Display', serif;">
         <div id="testimonial-bg">
 
            <div id="carousel-testimonial-wrap" class="rounded shadow">
