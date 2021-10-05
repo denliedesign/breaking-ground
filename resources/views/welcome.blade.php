@@ -70,7 +70,7 @@
                 @if($combo->comboName == 'welcome' && $combo->comboSection == 'A')
                     <div class="row my-4">
                         @include('/combos/admin')
-                        <div class="col-sm">
+                        <div class="col-sm d-flex justify-content-center">
                             <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" class="img-fluid">
                         </div>
                         <div class="col-sm d-flex align-items-center mx-3">
