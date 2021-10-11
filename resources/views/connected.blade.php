@@ -11,7 +11,7 @@
             <div class="row">
                 <div class="col-sm">
                     Studio 1
-                    <iframe type="text/html" frameborder="0" width="480" height="394" src="//video.nest.com/embedded/live/YsxfFx2I2Z?autoplay=1" allowfullscreen></iframe>
+                    <iframe type="text/html" frameborder="0" width="100%" height="394" src="//video.nest.com/embedded/live/YsxfFx2I2Z?autoplay=1" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm">
                     Studio 2
