@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Text;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class TextController extends Controller
 {
@@ -28,7 +29,7 @@ class TextController extends Controller
     {
         $this->authorize('update', Text::class);
         $text = new Text();
-        return view('/', compact('text'));
+        return Redirect::to(url()->previous("/"));
     }
 
     /**
@@ -40,7 +41,7 @@ class TextController extends Controller
     public function store()
     {
         $text = Text::create($this->validateRequest());
-        return redirect('/');
+        return Redirect::to(url()->previous("/"));
     }
 
     /**
@@ -76,7 +77,8 @@ class TextController extends Controller
     public function update(Request $request, Text $text)
     {
         $text->update($this->validateRequest());
-        return redirect('/');
+        return Redirect::to(url()->previous("/"))->with('message', 'Your Page Has Been Updated!');
+//        return back();
     }
 
     /**
@@ -88,7 +90,7 @@ class TextController extends Controller
     public function destroy(Text $text)
     {
         $text->delete();
-        return redirect('/');
+        return Redirect::to(url()->previous("/"));
     }
 
     private function validateRequest()

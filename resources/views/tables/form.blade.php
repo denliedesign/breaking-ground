@@ -19,41 +19,6 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="title">Table Title</label>
-                    <input id="title" type="text" class="form-control" name="title"
-                           value="">
-                    <div>{{ $errors->first('title') }}</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="head1">Heading 1</label>
-                    <input id="head1" type="text" class="form-control" name="head1"
-                           value="">
-                    <div>{{ $errors->first('head1') }}</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="head2">Heading 2</label>
-                    <input id="head2" type="text" class="form-control" name="head2"
-                           value="">
-                    <div>{{ $errors->first('head2') }}</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="head3">Heading 3</label>
-                    <input id="head3" type="text" class="form-control" name="head3"
-                           value="">
-                    <div>{{ $errors->first('head3') }}</div>
-                </div>
-
-                <div class="form-group">
-                    <label for="head4">Heading 4</label>
-                    <input id="head4" type="text" class="form-control" name="head4"
-                           value="">
-                    <div>{{ $errors->first('head4') }}</div>
-                </div>
-
-                <div class="form-group">
                     <label for="col1">Column 1</label>
                     <input id="col1" type="text" class="form-control" name="col1"
                            value="">

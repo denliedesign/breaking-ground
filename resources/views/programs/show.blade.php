@@ -34,40 +34,45 @@
                 <!-- TABLE CONTROL -->
                 @can('update', \App\Table::class)
                     <div id="programs-table" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                        <span class="fw-bold mx-3">heading table section</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#headingModal"
+                                onClick="AddHeadingName('programs'); AddHeadingSection('{{ $program->id }}');">
+                            Add Heading
+                        </button>
+                        @include('/headings/form')
+                    </div>
+                    <div id="programs-table" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
                         <span class="fw-bold mx-3">programs table section</span>
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
+{{--                                onClick="AddTableName('{{ substr(request()->route()->uri, 0, 8) }}'); AddTableSection('{{ $program->id }}');">--}}
                                 onClick="AddTableName('programs'); AddTableSection('{{ $program->id }}');">
                             Add New Row
                         </button>
                         @include('/tables/form')
                     </div>
                 @endcan
-                <table class="table">
-                    <tbody>
-                    @foreach($tables as $table)
-                        @if($table->tableName == 'programs' && $table->tableSection == "$program->id")
-                            <h2 class="table-title">{{ $table->title }}</h2>
-                            @if($table->head1 == true)
-                                <tr class="table-head">
-                                    <th>{{ $table->head1 }}</th>
-                                    <th>{{ $table->head2 }}</th>
-                                    <th>{{ $table->head3 }}</th>
-                                    <th>{{ $table->head4 }}</th>
-                                </tr>
+            <!-- END TABLE CONTROL -->
+
+                <table class="table mb-0">
+                        @foreach($headings as $heading)
+                            @if($heading->headingName == 'programs' && $heading->headingSection == "$program->id")
+                                <h2 class="table-title">{{ $heading->title }}</h2>
+                                @if($heading->head1 == true)
+                                    <thead>
+                                            <tr class="table-head">
+                                                <th>{{ $heading->head1 }}</th>
+                                                <th>{{ $heading->head2 }}</th>
+                                                <th>{{ $heading->head3 }}</th>
+                                                <th>{{ $heading->head4 }}</th>
+                                            </tr>
+                                    </thead>
+                                @endif
                             @endif
-                            <tr>
-                                <td>{{ $table->col1 }}</td>
-                                <td>{{ $table->col2 }}</td>
-                                <td>{{ $table->col3 }}</td>
-                                <td>{{ $table->col4 }}</td>
-                                <td>@include('/tables/admin')</td>
-                            </tr>
-                        @endif
-                    @endforeach
-                    </tbody>
+                                @endforeach
                 </table>
-                <!-- END TABLE CONTROL -->
+                @livewire('tables-table', ['program' => $program])
             </div>
             @if($program->id == 3)
                 <div class="col-sm">

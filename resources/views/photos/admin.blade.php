@@ -5,7 +5,7 @@
             @method('DELETE')
             @csrf
 
-            <button class="btn btn-danger ml-4" type="submit">Delete</button>
+            <button class="btn btn-danger ml-4" type="submit" onclick="return confirm('Are you sure?')">Delete</button>
         </form>
     </div>
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Combo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class ComboController extends Controller
 {
@@ -28,7 +29,7 @@ class ComboController extends Controller
     {
         $this->authorize('update', Combo::class);
         $combo = new Combo();
-        return view('/', compact('combo'));
+        return Redirect::to(url()->previous("/"));
     }
 
     /**
@@ -41,7 +42,7 @@ class ComboController extends Controller
     {
         $combo = Combo::create($this->validateRequest());
         $this->storeImage($combo);
-        return redirect('/');
+        return Redirect::to(url()->previous("/"));
     }
 
     /**
@@ -78,7 +79,7 @@ class ComboController extends Controller
     {
         $combo->update($this->validateRequest());
         $this->storeImage($combo);
-        return redirect('/');
+        return redirect(url()->previous())->with('message', 'Your Page Has Been Updated!');
     }
 
     /**
@@ -90,7 +91,7 @@ class ComboController extends Controller
     public function destroy(Combo $combo)
     {
         $combo->delete();
-        return redirect('/');
+        return Redirect::to(url()->previous("/"));
     }
 
     private function validateRequest()
@@ -102,6 +103,8 @@ class ComboController extends Controller
             'comboTitle' => 'nullable',
             'comboContent' => 'nullable',
             'comboImage' => 'nullable|file|image|max:5000',
+            'comboBtn' => 'nullable',
+            'comboUrl' => 'nullable',
         ]);
     }
 

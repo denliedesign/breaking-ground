@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Table;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class TableController extends Controller
 {
@@ -28,7 +29,9 @@ class TableController extends Controller
     {
         $this->authorize('update', Table::class);
         $table = new Table();
-        return view('/', compact('table'));
+//        return view('/', compact('table'));
+//        return Redirect::to(url()->previous("/"));
+        return back()->with('message', 'Your Page Has Been Updated!');
     }
 
     /**
@@ -40,7 +43,9 @@ class TableController extends Controller
     public function store()
     {
         $table = Table::create($this->validateRequest());
-        return redirect('/');
+//        return redirect('/');
+//        return Redirect::to(url()->previous("/"));
+        return back()->with('message', 'Your Page Has Been Updated!');
     }
 
     /**
@@ -76,7 +81,7 @@ class TableController extends Controller
     public function update(Request $request, Table $table)
     {
         $table->update($this->validateRequest());
-        return redirect('/');
+        return redirect(url()->previous())->with('message', 'Your Page Has Been Updated!');
     }
 
     /**
@@ -88,7 +93,7 @@ class TableController extends Controller
     public function destroy(Table $table)
     {
         $table->delete();
-        return redirect('/');
+        return Redirect::to(url()->previous("/"));
     }
 
     private function validateRequest()
@@ -96,15 +101,11 @@ class TableController extends Controller
         return request()->validate([
             'tableName' => 'required',
             'tableSection' => 'required',
-            'title' => 'nullable',
-            'head1' => 'nullable',
-            'head2' => 'nullable',
-            'head3' => 'nullable',
-            'head4' => 'nullable',
-            'col1' => 'required',
-            'col2' => 'required',
+            'col1' => 'nullable',
+            'col2' => 'nullable',
             'col3' => 'nullable',
             'col4' => 'nullable',
+            'position' => 'nullable',
         ]);
     }
 

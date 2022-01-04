@@ -1,10 +1,12 @@
 <?php
 
 use App\Http\Controllers\ComboController;
+use App\Http\Controllers\HeadingController;
 use App\Http\Controllers\PhotoController;
 use App\Http\Controllers\ProgramController;
 use App\Http\Controllers\TableController;
 use App\Http\Controllers\TextController;
+use App\Models\Program;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -95,6 +97,19 @@ Route::resource('photos', PhotoController::class);
 Route::resource('tables', TableController::class);
 Route::resource('combos', ComboController::class);
 Route::resource('programs', ProgramController::class);
+Route::resource('headings', HeadingController::class);
+
+Route::get('/programs/{program:slug}', function (Program $program) {
+    return view('programs.show', compact('program'));
+});
+Route::post('/programs/{program:slug}', function (Program $program) {
+    return $program;
+});
+
+//Route::post('/programs', function () {
+//    App\Models\Program::create(['programTitle' => request('programTitle')]);
+//    return redirect()->back();
+//});
 
 Route::get('contact', 'App\Http\Controllers\ContactUsController@create')->name('contact.create');
 Route::post('contact', 'App\Http\Controllers\ContactUsController@store')->name('contact.store');

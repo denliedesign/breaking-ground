@@ -20,9 +20,11 @@
             /*@import url('https://fonts.googleapis.com/css2?family=Halant:wght@500&family=Nunito+Sans&display=swap');*/
             @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+            /*@import "~livewire-sortable";*/
         </style>
 
         <!-- Styles -->
+        @livewireStyles
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="/css/style.css">
 
@@ -64,6 +66,7 @@
             toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
         });
     </script>
-
+    @livewireScripts
+    <script src="https://cdn.jsdelivr.net/gh/livewire/sortable@v0.x.x/dist/livewire-sortable.js"></script>
     </body>
 </html>

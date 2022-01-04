@@ -22,6 +22,7 @@ class CreateProgramsTable extends Migration
             $table->string('programBanner')->nullable();
             $table->text('programVideo')->nullable();
             $table->text('programDescription');
+            $table->string('slug')->unique();
             $table->timestamps();
         });
     }

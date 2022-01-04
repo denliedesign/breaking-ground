@@ -21,6 +21,8 @@ class CreateCombosTable extends Migration
             $table->string('comboTag')->nullable();
             $table->text('comboContent')->nullable();
             $table->string('comboImage')->nullable();
+            $table->string('comboBtn')->nullable();
+            $table->string('comboUrl')->nullable();
             $table->timestamps();
         });
     }

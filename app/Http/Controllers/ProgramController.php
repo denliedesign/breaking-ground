@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Program;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class ProgramController extends Controller
 {
@@ -41,7 +42,8 @@ class ProgramController extends Controller
     {
         $program = Program::create($this->validateRequest());
         $this->storeImage($program);
-        return redirect('/');
+        return view('programs.show', compact('program'));
+//        return Redirect::to(url()->previous("/")->with('message', 'Your Post Has Been Created'));
     }
 
     /**
@@ -78,7 +80,8 @@ class ProgramController extends Controller
     {
         $program->update($this->validateRequest());
         $this->storeImage($program);
-        return redirect('/');
+//        return view('programs.show', compact('program'));
+        return redirect(url()->previous())->with('message', 'Your Page Has Been Updated!');
     }
 
     /**
@@ -90,7 +93,7 @@ class ProgramController extends Controller
     public function destroy(Program $program)
     {
         $program->delete();
-        return redirect('/');
+        return Redirect::to(url()->previous("/"));
     }
 
     private function validateRequest()
@@ -105,7 +108,6 @@ class ProgramController extends Controller
 //            'programVideo' => 'nullable|file|mimetypes:video/avi,video/mpeg,video/quicktime,video/mp4|max:200000',
             'programVideo' => 'nullable',
             'programDescription' => 'required',
-
         ]);
     }
 

@@ -17,15 +17,11 @@ class CreateTablesTable extends Migration
             $table->id();
             $table->string('tableName');
             $table->char('tableSection', 1);
-            $table->string('title')->nullable();
-            $table->string('head1')->nullable();
-            $table->string('head2')->nullable();
-            $table->string('head3')->nullable();
-            $table->string('head4')->nullable();
-            $table->text('col1');
-            $table->text('col2');
+            $table->text('col1')->nullable();
+            $table->text('col2')->nullable();
             $table->text('col3')->nullable();
             $table->text('col4')->nullable();
+            $table->unsignedInteger('position')->nullable();
             $table->timestamps();
         });
     }

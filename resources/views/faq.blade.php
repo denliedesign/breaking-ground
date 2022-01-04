@@ -54,12 +54,22 @@
                         @endforeach
                     </div>
                 </div>
+                <!-------------------- TUITION TABLE SECTION -------------------------------------->
                 <div class="tab-pane fade" id="tuition" role="tabpanel" aria-labelledby="tuition-tab">
                     <div class="col-sm">
                         <!-- TABLE CONTROL -->
                         @can('update', \App\Table::class)
-                            <div id="faq-table-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
-                                <span class="fw-bold mx-3">faq table section A</span>
+                            <div id="tuition-heading-table-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                                <span class="fw-bold mx-3">faq heading table section A</span>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#headingModal"
+                                        onClick="AddHeadingName('faq'); AddHeadingSection('A');">
+                                    Add New Row
+                                </button>
+                                @include('/headings/form')
+                            </div>
+                            <div id="tuition-table-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                                <span class="fw-bold mx-3">tuition table section A</span>
                                 <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
                                         onClick="AddTableName('faq'); AddTableSection('A');">
@@ -69,33 +79,29 @@
                             </div>
                         @endcan
 
-                        <table class="table">
-                            <tbody>
-                            @foreach($tables as $table)
-                                @if($table->tableName == 'faq' && $table->tableSection == 'A')
-                                    <h2 class="table-title text-center">{{ $table->title }}</h2>
-                                    @if($table->head1 == true)
+                        <table class="table mb-0">
+                            <thead>
+                            @foreach($headings as $heading)
+                                @if($heading->headingName == 'faq' && $heading->headingSection == 'A')
+                                    <h2 class="table-title text-center">{{ $heading->title }}</h2>
+                                    @if($heading->head1 == true)
                                         <tr class="table-head">
-                                            <th>{{ $table->head1 }}</th>
-                                            <th>{{ $table->head2 }}</th>
-                                            <th>{{ $table->head3 }}</th>
-                                            <th>{{ $table->head4 }}</th>
+                                            <th>{{ $heading->head1 }}</th>
+                                            <th>{{ $heading->head2 }}</th>
+                                            <th>{{ $heading->head3 }}</th>
+                                            <th>{{ $heading->head4 }}</th>
                                         </tr>
                                     @endif
-                                    <tr>
-                                        <td>{{ $table->col1 }}</td>
-                                        <td>{{ $table->col2 }}</td>
-                                        <td>{{ $table->col3 }}</td>
-                                        <td>{{ $table->col4 }}</td>
-                                        <td>@include('/tables/admin')</td>
-                                    </tr>
                                 @endif
                             @endforeach
-                            </tbody>
+                            </thead>
                         </table>
-                        <!-- END TABLE CONTROL -->
+                        @livewire('tuition-table')
+
+                        <!-- END TUITION TABLE CONTROL -->
                     </div>
                 </div>
+                <!-------------------- END TABLE SECTION -------------------------------------->
                 <div class="tab-pane fade" id="faqs" role="tabpanel" aria-labelledby="faq-tab">
                     @can('update', \App\Text::class)
                         <div id="faq-text-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">

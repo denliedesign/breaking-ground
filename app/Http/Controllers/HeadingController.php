@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Photo;
+use App\Models\Heading;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 
-class PhotoController extends Controller
+class HeadingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class PhotoController extends Controller
 
     public function index()
     {
-        $photo = \App\Models\Photo::all();
-        return view('/', compact('photo'));
+        $heading = \App\Models\Heading::all();
+        return view('/', compact('heading'));
     }
 
     /**
@@ -27,10 +27,10 @@ class PhotoController extends Controller
      */
     public function create()
     {
-        $this->authorize('update', Photo::class);
-        $photo = new Photo();
+        $this->authorize('update', Heading::class);
+        $heading = new Heading();
+//        return view('/', compact('heading'));
         return Redirect::to(url()->previous("/"));
-
     }
 
     /**
@@ -41,79 +41,70 @@ class PhotoController extends Controller
      */
     public function store()
     {
-        $photo = Photo::create($this->validateRequest());
-        $this->storeImage($photo);
+        $heading = Heading::create($this->validateRequest());
+//        return redirect('/');
         return Redirect::to(url()->previous("/"));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Photo  $photo
+     * @param  \App\Heading  $heading
      * @return \Illuminate\Http\Response
      */
-    public function show(Photo $photo)
+    public function show(Heading $heading)
     {
-        return view('/', compact('photo'));
+        return view('/', compact('heading'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Photo  $photo
+     * @param  \App\Heading  $heading
      * @return \Illuminate\Http\Response
      */
-    public function edit(Photo $photo)
+    public function edit(Heading $heading)
     {
-        $this->authorize('update', Photo::class);
-        return view('/', compact('photo'));
+        $this->authorize('update', Heading::class);
+        return view('headings.edit', compact('heading'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Photo  $photo
+     * @param  \App\Heading  $heading
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Photo $photo)
+    public function update(Request $request, Heading $heading)
     {
-        $photo->update($this->validateRequest());
-        $this->storeImage($photo);
-        return Redirect::to(url()->previous("/"));
-
+        $heading->update($this->validateRequest());
+        return redirect(url()->previous())->with('message', 'Your Page Has Been Updated!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Photo  $photo
+     * @param  \App\Heading  $heading
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Photo $photo)
+    public function destroy(Heading $heading)
     {
-        $photo->delete();
+        $heading->delete();
         return Redirect::to(url()->previous("/"));
-
     }
 
     private function validateRequest()
     {
         return request()->validate([
-            'photoName' => 'required',
-            'photoSection' => 'required',
-            'image' => 'required|file|image|max:5000',
+            'headingName' => 'required',
+            'headingSection' => 'required',
+            'title' => 'nullable',
+            'head1' => 'nullable',
+            'head2' => 'nullable',
+            'head3' => 'nullable',
+            'head4' => 'nullable',
         ]);
-    }
-
-    private function storeImage($photo)
-    {
-        if (request()->has('image'))
-        {
-            $photo->update([
-                'image' => request()->image->store('uploads', 'public'),
-            ]);
-        }
     }
 
 }

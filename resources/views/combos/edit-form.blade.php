@@ -44,7 +44,7 @@
 
                 @csrf
                 <div class="d-flex justify-content-around mt-2">
-                    <button type="submit" class="btn btn-primary">Add</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
                 </div>
             </form>
             <!-- END FORM -->

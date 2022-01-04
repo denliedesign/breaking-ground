@@ -29,3 +29,11 @@ function AddComboName(c) {
 function AddComboSection(c) {
     document.getElementById('comboSection').value += c;
 };
+
+function AddHeadingName(c) {
+    document.getElementById('headingName').value += c;
+};
+
+function AddHeadingSection(c) {
+    document.getElementById('headingSection').value += c;
+};

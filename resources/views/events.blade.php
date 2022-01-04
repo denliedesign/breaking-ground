@@ -43,7 +43,10 @@
                             <div class="text-center">
                                 {!! $combo->comboContent !!}
                             </div>
-                            @include('register')
+                            <div class="d-flex justify-content-center">
+                                <a class="main-button shadow" href="{{ $combo->comboUrl }}" target="_blank">{{ $combo->comboBtn }}</a>
+                            </div>
+{{--                            @include('register')--}}
                             @include('/combos/admin')
                         </div>
                     </div>

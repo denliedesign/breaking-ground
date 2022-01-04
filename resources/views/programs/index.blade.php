@@ -22,7 +22,7 @@
                 @if($program->category == 'program')
                     <div class="col-sm text-center">
                         <div>
-                            <a href="/programs/{{ $program->id }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>
+                            <a href="/programs/{{ $program->slug }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>
                             <h3>{{ $program->programTitle }}</h3>
                             <p>{{ $program->programAge }}</p>
                             @include('/programs/admin')
@@ -40,7 +40,7 @@
                 @if($program->category == 'intensive')
                     <div class="col-sm text-center">
                         <div>
-                            <a href="/programs/{{ $program->id }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>
+                            <a href="/programs/{{ $program->slug }}"><img src="{{ asset('/storage/' . $program->programImage) }}" alt="" class="img-fluid"></a>
                             <h3>{{ $program->programTitle }}</h3>
                             <p>{{ $program->programAge }}</p>
                             @include('/programs/admin')

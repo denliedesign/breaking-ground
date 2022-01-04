@@ -45,6 +45,19 @@
                     <div>{{ $errors->first('comboImage') }}</div>
                 </div>
 
+                <div class="form-group">
+                    <label for="comboBtn">Button Text</label>
+                    <input id="comboBtn" type="text" class="form-control" name="comboBtn"
+                           value="">
+                    <div>{{ $errors->first('comboBtn') }}</div>
+                </div>
+                <div class="form-group">
+                    <label for="comboUrl">Button Link</label>
+                    <input id="comboUrl" type="text" class="form-control" name="comboUrl"
+                           value="">
+                    <div>{{ $errors->first('comboUrl') }}</div>
+                </div>
+
                 @csrf
                 <div class="d-flex justify-content-around mt-2">
                     <button type="submit" class="btn btn-primary">Add</button>

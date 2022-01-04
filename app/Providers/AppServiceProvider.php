@@ -4,10 +4,12 @@ namespace App\Providers;
 
 use App\Http\Controllers\TextController;
 use App\Models\Combo;
+use App\Models\Heading;
 use App\Models\Photo;
 use App\Models\Program;
 use App\Models\Table;
 use App\Models\Text;
+use App\Models\User;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -44,6 +46,8 @@ class AppServiceProvider extends ServiceProvider
         View::share('tables', Table::all());
         View::share('combos', Combo::all());
         View::share('programs', Program::all());
+        View::share('users', User::all());
+        View::share('headings', Heading::all());
 
 
     }

@@ -19,6 +19,7 @@ class AuthServiceProvider extends ServiceProvider
          'App\Models\Table' => 'App\Policies\TablePolicy',
          'App\Models\Combo' => 'App\Policies\ComboPolicy',
          'App\Models\Program' => 'App\Policies\ProgramPolicy',
+         'App\Models\Heading' => 'App\Policies\HeadingPolicy',
     ];
 
     /**
