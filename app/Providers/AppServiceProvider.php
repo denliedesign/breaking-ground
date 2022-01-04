@@ -41,13 +41,13 @@ class AppServiceProvider extends ServiceProvider
 //            //
 //        });
 
-//        View::share('texts', Text::all());
-//        View::share('photos', Photo::all());
-//        View::share('tables', Table::all());
-//        View::share('combos', Combo::all());
-//        View::share('programs', Program::all());
-//        View::share('users', User::all());
-//        View::share('headings', Heading::all());
+        View::share('texts', Text::all());
+        View::share('photos', Photo::all());
+        View::share('tables', Table::all());
+        View::share('combos', Combo::all());
+        View::share('programs', Program::all());
+        View::share('users', User::all());
+        View::share('headings', Heading::all());
 
 
     }
