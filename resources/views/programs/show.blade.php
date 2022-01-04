@@ -59,6 +59,7 @@
                         @foreach($headings as $heading)
                             @if($heading->headingName == 'programs' && $heading->headingSection == "$program->id")
                                 <h2 class="table-title">{{ $heading->title }}</h2>
+                                @include('/headings/admin')
                                 @if($heading->head1 == true)
                                     <thead>
                                             <tr class="table-head">
@@ -66,7 +67,6 @@
                                                 <th>{{ $heading->head2 }}</th>
                                                 <th>{{ $heading->head3 }}</th>
                                                 <th>{{ $heading->head4 }}</th>
-                                                <th>@include('/headings/admin')</th>
                                             </tr>
                                     </thead>
                                 @endif

@@ -41,13 +41,13 @@
                         @foreach($headings as $heading)
                             @if($heading->headingName == 'events' && $heading->headingSection == 'A')
                                 <h2 class="table-title text-center">{{ $heading->title }}</h2>
+                                @include('/headings/admin')
                                 @if($heading->head1 == true)
                                     <tr class="table-head">
                                         <th>{{ $heading->head1 }}</th>
                                         <th>{{ $heading->head2 }}</th>
                                         <th>{{ $heading->head3 }}</th>
                                         <th>{{ $heading->head4 }}</th>
-                                        <th>@include('/headings/admin')</th>
                                     </tr>
                                     @endif
                                 @endif
