@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Cviebrock\EloquentSluggable\Sluggable;
+//use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 //use Cviebrock\EloquentSluggable\Sluggable;
@@ -10,15 +10,15 @@ use Illuminate\Database\Eloquent\Model;
 class Program extends Model
 {
     use HasFactory;
-    use Sluggable;
+//    use Sluggable;
     protected $guarded = [];
 
-    public function sluggable(): array
-    {
-        return [
-            'slug' => [
-                'source' => 'programTitle'
-            ]
-        ];
-    }
+//    public function sluggable(): array
+//    {
+//        return [
+//            'slug' => [
+//                'source' => 'programTitle'
+//            ]
+//        ];
+//    }
 }
