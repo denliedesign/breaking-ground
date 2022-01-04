@@ -90,6 +90,7 @@
                                             <th>{{ $heading->head2 }}</th>
                                             <th>{{ $heading->head3 }}</th>
                                             <th>{{ $heading->head4 }}</th>
+                                            <th>@include('/headings/admin')</th>
                                         </tr>
                                     @endif
                                 @endif
