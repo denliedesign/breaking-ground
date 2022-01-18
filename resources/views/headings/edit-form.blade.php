@@ -52,7 +52,6 @@
     @csrf
     <div class="d-flex justify-content-around mt-2">
         <button type="submit" class="btn btn-primary">Save Heading</button>
-        <button type="button" class="btn btn-secondary" onClick="window.location.reload();">Close</button>
     </div>
 </form>
 <!-- END FORM -->
