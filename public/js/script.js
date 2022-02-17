@@ -37,3 +37,8 @@ function AddHeadingName(c) {
 function AddHeadingSection(c) {
     document.getElementById('headingSection').value += c;
 };
+
+
+// function downToBottom() {
+//     gsap.to(window, {duration: 5, ease: 'power2.inOut', scrollTo: '#bottom'});
+// }
