@@ -8,7 +8,7 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Covid-19 Updates</span></h1>
+            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Recital</span></h1>
             <div>
                 <!-- IMAGE CONTROL -->
                 @can('update', \App\Photo::class)
@@ -33,6 +33,9 @@
                 @endif
             @endforeach
             <!-- END IMAGE CONTROL -->
+                <div class="d-flex justify-content-center">
+                    <a class="main-button shadow" href="https://sites.google.com/view/breaking-ground-recital-2022/home?authuser=0" target="_blank">Learn More!</a>
+                </div>
             </div>
 
 {{--            <div class="row">--}}
