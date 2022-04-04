@@ -80,8 +80,8 @@ Route::post('/faq', function () {
     return view('faq');
 });
 
-Route::get('/news', function () {
-    return view('/news');
+Route::get('/recital', function () {
+    return view('/recital');
 });
 
 Route::get('studio-livestream', function () {
