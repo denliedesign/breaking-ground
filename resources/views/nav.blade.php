@@ -34,7 +34,7 @@
                         <a class="nav-link" href="/events">Events</a>
                     </li>
                     <li class="nav-item text-center" style="width: 100%;">
-                        <a class="nav-link" href="/news">Recital</a>
+                        <a class="nav-link" href="/recital">Recital</a>
                     </li>
                     <li class="nav-item text-center" style="width: 100%;">
                         <a class="nav-link" href="/parties">Parties</a>
