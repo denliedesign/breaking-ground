@@ -79,8 +79,17 @@
                 <div class="col-sm">
                     <!-- TABLE CONTROL -->
                     @can('update', \App\Table::class)
-                        <div id="programs-table-b" style="border:2px solid green;" class="my-3 py-1 rounded shadow">
-                            <span class="fw-bold mx-3">beautiful beginnings table section</span>
+                        <div id="programs-table" style="border:2px solid purple;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">second heading table section</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#headingModal"
+                                    onClick="AddHeadingName('programs'); AddHeadingSection('Z');">
+                                Add Heading
+                            </button>
+                            @include('/headings/form')
+                        </div>
+                        <div id="programs-table-b" style="border:2px solid purple;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">second table section</span>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
                                     onClick="AddTableName('programs'); AddTableSection('Z');">
@@ -89,31 +98,26 @@
                             @include('/tables/form')
                         </div>
                     @endcan
-                    <table class="table">
-                        <tbody>
-                        @foreach($tables as $table)
-                            @if($table->tableName == 'programs' && $table->tableSection == "Z")
-                                <h2 class="table-title">{{ $table->title }}</h2>
-                                @if($table->head1 == true)
+                    <table class="table mb-0">
+                        @foreach($headings as $heading)
+                            @if($heading->headingName == 'programs' && $heading->headingSection == "Z")
+                                <h2 class="table-title">{{ $heading->title }}</h2>
+                                @include('/headings/admin')
+                                @if($heading->head1 == true)
+                                    <thead>
                                     <tr class="table-head">
-                                        <th>{{ $table->head1 }}</th>
-                                        <th>{{ $table->head2 }}</th>
-                                        <th>{{ $table->head3 }}</th>
-                                        <th>{{ $table->head4 }}</th>
+                                        <th>{{ $heading->head1 }}</th>
+                                        <th>{{ $heading->head2 }}</th>
+                                        <th>{{ $heading->head3 }}</th>
+                                        <th>{{ $heading->head4 }}</th>
                                     </tr>
+                                    </thead>
                                 @endif
-                                <tr>
-                                    <td>{{ $table->col1 }}</td>
-                                    <td>{{ $table->col2 }}</td>
-                                    <td>{{ $table->col3 }}</td>
-                                    <td>{{ $table->col4 }}</td>
-                                    <td>@include('/tables/admin')</td>
-                                </tr>
                             @endif
                         @endforeach
-                        </tbody>
                     </table>
-                    <!-- END TABLE CONTROL -->
+                    @livewire('doubles-table', ['program' => $program])
+
                 </div>
             @endif
         </div>
