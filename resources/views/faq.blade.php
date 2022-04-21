@@ -96,9 +96,9 @@
                                 @endif
                             @endforeach
                             </thead>
-                        </table>
-                        @livewire('tuition-table')
 
+                        @livewire('tuition-table')
+                        </table>
                         <!-- END TUITION TABLE CONTROL -->
                     </div>
                 </div>

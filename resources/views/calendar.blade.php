@@ -53,8 +53,9 @@
                                 @endif
                                 @endforeach
                         </thead>
-                    </table>
+
                     @livewire('calendar-table')
+                    </table>
                 </div>
             </div>
         </div>

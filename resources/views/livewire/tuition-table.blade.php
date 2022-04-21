@@ -1,5 +1,5 @@
 @can('update', \App\Table::class)
-    <table class="table">
+{{--    <table class="table">--}}
         <tbody wire:sortable="updateTableOrder">
         @foreach($tables as $table)
             {{--                @if($table->tableName == substr(request()->route()->uri, 0, 8) )--}}
@@ -14,13 +14,13 @@
             @endif
         @endforeach
         </tbody>
-    </table>
+{{--    </table>--}}
 @endcan
 
 
 <!-- TABLE USERS CAN SEE AND CANNOT SORT -->
 @guest
-    <table class="table">
+{{--    <table class="table">--}}
         <tbody>
         @foreach($tables as $table)
             @if($table->tableName == 'faq' && $table->tableSection == "A")
@@ -34,6 +34,6 @@
             @endif
         @endforeach
         </tbody>
-    </table>
+{{--    </table>--}}
 @endguest
 <!-- END TABLE USERS CAN SEE AND CANNOT SORT -->

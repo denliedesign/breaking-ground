@@ -1,5 +1,5 @@
 @can('update', \App\Table::class)
-<table class="table">
+{{--<table class="table">--}}
 {{--    @foreach($tables as $table)--}}
 {{--        @if($table->tableName == 'programs' && $table->tableSection == "$program->id")--}}
 {{--            <h2 class="table-title">{{ $table->title }}</h2>--}}
@@ -30,13 +30,13 @@
         @endif
     @endforeach
     </tbody>
-</table>
+{{--</table>--}}
 @endcan
 
 
 <!-- TABLE USERS CAN SEE AND CANNOT SORT -->
 @guest
-    <table class="table">
+{{--    <table class="table">--}}
         <tbody>
         @foreach($tables as $table)
             @if($table->tableName == 'programs' && $table->tableSection == "$program->id")
@@ -50,6 +50,6 @@
             @endif
         @endforeach
         </tbody>
-    </table>
+{{--    </table>--}}
 @endguest
 <!-- END TABLE USERS CAN SEE AND CANNOT SORT -->

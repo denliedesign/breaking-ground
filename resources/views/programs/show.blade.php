@@ -72,8 +72,9 @@
                                 @endif
                             @endif
                                 @endforeach
-                </table>
+
                 @livewire('tables-table', ['program' => $program])
+                </table>
             </div>
             @if($program->id == 3)
                 <div class="col-sm">
@@ -115,9 +116,9 @@
                                 @endif
                             @endif
                         @endforeach
-                    </table>
-                    @livewire('doubles-table', ['program' => $program])
 
+                    @livewire('doubles-table', ['program' => $program])
+                    </table>
                 </div>
             @endif
         </div>
