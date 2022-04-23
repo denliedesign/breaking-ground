@@ -11,7 +11,7 @@
 
     <div class="d-block d-md-none text-uppercase text-center fw-bold mt-4" style="width: 100%; height: 50vh; font-size: 2.75em; font-family: 'Playfair Display', serif;">
         <div>Our Dancers Are&nbsp;</div>
-        <div id="statement"></div>
+        <div style="font-size: 1em; color: #dd3333; text-decoration: underline;"></div>
     </div>
 
     <div class="container d-flex d-inline">
