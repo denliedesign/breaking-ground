@@ -2,6 +2,18 @@
 
 @section('content')
 
+    <div class="d-none d-md-flex text-uppercase fw-bold my-4" style="width: 100%; font-size: 2.75em; font-family: 'Playfair Display', serif;">
+        <div style="margin-left: 10%;">
+            <ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon>
+            Our Dancers Are&nbsp;</div>
+        <div id="statement"></div>
+    </div>
+
+    <div class="d-block d-md-none text-uppercase text-center fw-bold mt-4" style="width: 100%; height: 50vh; font-size: 2.75em; font-family: 'Playfair Display', serif;">
+        <div>Our Dancers Are&nbsp;</div>
+        <div id="statement"></div>
+    </div>
+
     <div class="container d-flex d-inline">
         @can('update', \App\Combo::class)
             <div id="main-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
