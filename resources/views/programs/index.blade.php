@@ -26,7 +26,7 @@
                             <h3>{{ $program->programTitle }}</h3>
                             <p>{{ $program->programAge }}</p>
                             @include('/programs/admin')
-                            <div class="d-flex justify-content-center my-5">
+                            <div class="d-flex justify-content-center">
                                 <a class="main-button shadow mx-3" href="/programs/{{ $program->slug }}">Click Here For Schedule</a>
                             </div>
                         </div>
@@ -47,6 +47,9 @@
                             <h3>{{ $program->programTitle }}</h3>
                             <p>{{ $program->programAge }}</p>
                             @include('/programs/admin')
+                            <div class="d-flex justify-content-center">
+                                <a class="main-button shadow mx-3" href="/programs/{{ $program->slug }}">Click Here For Schedule</a>
+                            </div>
                         </div>
                     </div>
                 @endif
