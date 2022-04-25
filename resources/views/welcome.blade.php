@@ -87,7 +87,7 @@
                                 <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="max-height: 300px; width: auto;">
                             </div>
                             <div class="col-sm-8 d-flex align-items-center">
-                                <div style="font-size: 0.9em;">
+                                <div style="font-size: 0.8em;">
                                     <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
                                     {!! $combo->comboContent !!}
                                 </div>
