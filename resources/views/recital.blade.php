@@ -11,7 +11,7 @@
             <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Recital</span></h1>
             <div>
                 <div class="d-flex justify-content-center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLJZF4G4Fi27yTaYsEdTi32lAuuSZ707ZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="744.8" height="418.95" src="https://www.youtube.com/embed/khfFEKuDfhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
 
 {{--                <!-- IMAGE CONTROL -->--}}

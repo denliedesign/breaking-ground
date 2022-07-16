@@ -8,7 +8,7 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center"><span class="pages-heading px-5 py-3">Register & FAQ</span></h1>
+            <h1 class="text-center"><span class="pages-heading px-5 py-3">Registration</span></h1>
             <div class="d-flex justify-content-center my-5">
                 <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
                 <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
@@ -18,20 +18,22 @@
             <!-- tabs -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="inclusive-tab" data-bs-toggle="tab" data-bs-target="#inclusive" type="button" role="tab" aria-controls="inclusive" aria-selected="true">All Inclusive</button>
+                    <button class="nav-link active" id="tuition-tab" data-bs-toggle="tab" data-bs-target="#tuition" type="button" role="tab" aria-controls="tuition" aria-selected="true">Tuition</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="tuition-tab" data-bs-toggle="tab" data-bs-target="#tuition" type="button" role="tab" aria-controls="tuition" aria-selected="false">Tuition</button>
+                    <button class="nav-link" id="inclusive-tab" data-bs-toggle="tab" data-bs-target="#inclusive" type="button" role="tab" aria-controls="inclusive" aria-selected="false">All Inclusive</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faqs" type="button" role="tab" aria-controls="faqs" aria-selected="false">FAQ</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#fittings" type="button" role="tab" aria-controls="fittings" aria-selected="false">Fittings</button>
+                    <a href="https://www.supersaas.com/schedule/BGDC/Fittings" target="_blank" style="text-decoration: none;">
+                        <button class="nav-link" id="faq-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls="fittings" aria-selected="false">Fittings</button>
+                    </a>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="inclusive" role="tabpanel" aria-labelledby="inclusive-tab">
+                <div class="tab-pane fade" id="inclusive" role="tabpanel" aria-labelledby="inclusive-tab">
                     <div class="col-sm">
                         @can('update', \App\Text::class)
                             <div id="faq-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
@@ -55,7 +57,7 @@
                     </div>
                 </div>
                 <!-------------------- TUITION TABLE SECTION -------------------------------------->
-                <div class="tab-pane fade" id="tuition" role="tabpanel" aria-labelledby="tuition-tab">
+                <div class="tab-pane fade show active" id="tuition" role="tabpanel" aria-labelledby="tuition-tab">
                     <div class="col-sm">
                         <!-- TABLE CONTROL -->
                         @can('update', \App\Table::class)
@@ -126,7 +128,7 @@
                 </div>
 
                 <div class="tab-pane fade" id="fittings" role="tabpanel" aria-labelledby="fittings-tab">
-                    <iframe src="https://letsmeet.io/breakinggrounddancecenter1/dancewear-fitting" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen=""></iframe>
+                    <iframe src="https://www.supersaas.com/schedule/BGDC/Fittings" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen=""></iframe>
                 </div>
 
             </div>

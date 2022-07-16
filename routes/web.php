@@ -72,13 +72,13 @@ Route::post('/honor-society', function () {
     return view('honor-society');
 });
 
-Route::get('/faq', function () {
-    return view('faq');
+Route::get('/registration', function () {
+    return view('registration');
 });
 
-Route::post('/faq', function () {
-    return view('faq');
-});
+//Route::post('/faq', function () {
+//    return view('faq');
+//});
 
 Route::get('/recital', function () {
     return view('/recital');

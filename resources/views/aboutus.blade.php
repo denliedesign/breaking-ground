@@ -8,7 +8,7 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Who We Are</span></h1>
+            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">About Us</span></h1>
 
             @can('update', \App\Text::class)
                 <div id="about-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
@@ -45,10 +45,10 @@
                 </div>
             @endcan
 
-                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
                     @foreach($combos as $combo)
                         @if($combo->comboName == 'instructors' && $combo->comboSection == 'A')
-                    <div class="col">
+                    <div class="col p-4">
                                 <!-- card -->
                                     <div class="card mb-4">
                                         <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" class="img-fluid" style="filter: grayscale(100%);">
@@ -57,7 +57,7 @@
                                             <div class="accordion" id="accordionExample">
                                                 <div class="accordion-item border-0">
                                                     <h2 class="accordion-header" id="headingOne">
-                                                        <div class="acc-btn" data-bs-toggle="collapse" data-bs-target="#{{ $combo->comboTag }}" aria-expanded="true" aria-controls="{{ $combo->comboTag }}">
+                                                        <div style="font-size: 13.5px;" class="acc-btn" data-bs-toggle="collapse" data-bs-target="#{{ $combo->comboTag }}" aria-expanded="true" aria-controls="{{ $combo->comboTag }}">
                                                             {{ $combo->comboTitle }}
                                                         </div>
                                                     </h2>
