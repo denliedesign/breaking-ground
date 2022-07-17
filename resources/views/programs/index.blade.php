@@ -56,7 +56,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-center">
-                                    <a class="main-button shadow mx-3" href="/programs/{{ $program->slug }}">Click Here For Schedule</a>
+                                    <a class="btn btn-red btn-family shadow mx-3" href="/programs/{{ $program->slug }}">Click Here For Schedule</a>
                                 </div>
                             </div>
                         </div>
