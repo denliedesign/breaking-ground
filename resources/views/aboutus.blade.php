@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('banner-image', 'instructors.jpg')
+@section('banner-image', 'dancers.png')
 
 @section('content')
 
