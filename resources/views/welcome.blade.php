@@ -15,7 +15,7 @@
 {{--                    <div class="col-sm d-flex justify-content-center align-items-center">--}}
 {{--                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/hxNx0jQAA4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
 {{--                    </div>--}}
-                    <video style="height: auto; width: 100%;" src="images/commercial.mp4" autoplay="" controls="">
+                    <video style="height: auto; width: 100%;" src="images/commercial.mp4" autoplay="" controls="" poster="/images/commercial-poster.png">
                     </video>
                     <div class="d-flex justify-content-center my-3">
                         <a href="/programs" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">Find Your Class</div></a>
