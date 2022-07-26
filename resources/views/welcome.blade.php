@@ -7,7 +7,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Safest Dance Studio | Breaking Ground Dance Center</h5>
+                    <h5 class="modal-title">Breaking Ground Dance Center</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -15,7 +15,7 @@
 {{--                    <div class="col-sm d-flex justify-content-center align-items-center">--}}
 {{--                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/hxNx0jQAA4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
 {{--                    </div>--}}
-                    <video style="height: auto; width: 100%;" src="images/commercial.mp4" autoplay="" controls="" poster="/images/commercial-poster.png">
+                    <video style="height: auto; width: 100%;" src="images/if-you-let-me-dance.mov" autoplay="" controls="" poster="/images/if-you-let-me-dance-poster.png">
                     </video>
                     <div class="d-flex justify-content-center my-3">
                         <a href="/programs" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">Find Your Class</div></a>
@@ -123,24 +123,24 @@
     <!-- END WELCOME COMBO CONTROL -->
     </div>
 
-    <div style="background: #dd3333;" class="text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm d-flex justify-content-center align-items-center">
-                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/hxNx0jQAA4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col-sm">
-                    <h2 class="text-center">BGDC IS A SAFER STUDIO™</h2>
-                    <div class="d-flex justify-content-center my-2">
-                        <img src="/images/safer-studio-logo.png" alt="safer studio logo" class="img-fluid" style="max-height: 200px; width: auto;">
-                    </div>
-                    <p class="text-center">
-                        During the Coronavirus (COVID-19) pandemic, MTJGD™ recommends all members use a phased approach to reopening physical services, based on the latest government guidance, as well as regional and local orders. MTJGD™ recommends all members develop and clearly communicate a “Safer Studio Plan” to address any operational changes, precautionary measures, and policy adjustments being made to facilitate the safest possible return to in-person services.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div style="background: #dd3333;" class="text-white py-4">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-sm d-flex justify-content-center align-items-center">--}}
+{{--                    <iframe width="100%" height="400" src="https://www.youtube.com/embed/hxNx0jQAA4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+{{--                </div>--}}
+{{--                <div class="col-sm">--}}
+{{--                    <h2 class="text-center">BGDC IS A SAFER STUDIO™</h2>--}}
+{{--                    <div class="d-flex justify-content-center my-2">--}}
+{{--                        <img src="/images/safer-studio-logo.png" alt="safer studio logo" class="img-fluid" style="max-height: 200px; width: auto;">--}}
+{{--                    </div>--}}
+{{--                    <p class="text-center">--}}
+{{--                        During the Coronavirus (COVID-19) pandemic, MTJGD™ recommends all members use a phased approach to reopening physical services, based on the latest government guidance, as well as regional and local orders. MTJGD™ recommends all members develop and clearly communicate a “Safer Studio Plan” to address any operational changes, precautionary measures, and policy adjustments being made to facilitate the safest possible return to in-person services.--}}
+{{--                    </p>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div style="background: #f4f4f4;">
         <div class="container">

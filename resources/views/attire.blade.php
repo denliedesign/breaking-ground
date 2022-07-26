@@ -49,8 +49,8 @@
     </div>
     <!-- END IMAGE CONTROL -->
 
-    <h1 class="text-center mt-5 mb-3"><span class="pages-heading px-5 py-3">Dancewear/Shoe Fittings</span></h1>
+{{--    <h1 class="text-center mt-5 mb-3"><span class="pages-heading px-5 py-3">Dancewear/Shoe Fittings</span></h1>--}}
 
-    <iframe src="https://letsmeet.io/breakinggrounddancecenter1/dancewear-fitting" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen=""></iframe>
+{{--    <iframe src="https://letsmeet.io/breakinggrounddancecenter1/dancewear-fitting" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen=""></iframe>--}}
 
 </div>

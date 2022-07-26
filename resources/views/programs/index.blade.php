@@ -31,7 +31,10 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="d-flex justify-content-center">
-                                        <a class="btn btn-red btn-family shadow mx-3" href="/programs/{{ $program->slug }}">Click Here For Schedule</a>
+                                        <div>
+                                            <a class="btn btn-red btn-family shadow m-2" href="/programs/{{ $program->slug }}">Schedule</a>
+                                            <a class="btn btn-red-outline btn-family shadow m-2" href="/images/dress-code-{{$program->id}}.pdf" target="_blank">Dress Code</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +59,7 @@
                             </div>
                             <div class="card-footer">
                                 <div class="d-flex justify-content-center">
-                                    <a class="btn btn-red btn-family shadow mx-3" href="/programs/{{ $program->slug }}">Click Here For Schedule</a>
+                                    <a class="btn btn-red btn-family shadow mx-3" href="/programs/{{ $program->slug }}">Schedule</a>
                                 </div>
                             </div>
                         </div>
@@ -103,6 +106,6 @@
 {{--        @endforeach--}}
 {{--    </div>--}}
 
-    @include('attire')
+{{--    @include('attire')--}}
 
 @endsection
