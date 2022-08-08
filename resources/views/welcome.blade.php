@@ -107,13 +107,25 @@
                 <div class="container">
                     <div class="row my-5">
                         @include('/combos/admin')
-                        <div class="col-sm-4 d-flex justify-content-center align-items-center">
-                            <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="max-height: 300px; width: auto;">
+                        <div class="col-sm d-flex justify-content-center">
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="max-height: 300px; width: auto;">
+                                </div>
+                                <div style="font-size: 1em;">
+                                    <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
+                                    {!! $combo->comboContent !!}
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-8 d-flex align-items-center">
-                            <div style="font-size: 1em;">
-                                <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
-                                {!! $combo->comboContent !!}
+                        <div class="col-sm d-flex justify-content-center">
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="/images/logo-bow-2022.png" alt="bow award" class="img-fluid" style="max-height: 300px;">
+                                </div>
+                                <div class="text-center" style="font-size: 1.25em;">
+                                    Best of Westchester 2022 Winner for Best Dance Studio and Best After-school Program
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,23 +137,6 @@
 
     <div>
         <img src="/images/culture.jpg" alt="" style="width: 100%; height: auto;">
-    </div>
-
-    <div class="container">
-        <div class="row py-5">
-            <div class="col-sm-4">
-                <div class="d-flex align-items-center">
-                    <img src="/images/logo-bow-2022.png" alt="bow award" class="img-fluid" style="max-height: 300px;">
-                </div>
-            </div>
-            <div class="col-sm-8">
-                <div class="d-flex align-items-center" style="height: 100%;">
-                    <div class="text-center" style="font-size: 2em;">
-                        Best of Westchester 2022 Winner for Best Dance Studio and Best After-school Program
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 
 {{--    <div style="background: #dd3333;" class="text-white py-4">--}}
