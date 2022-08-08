@@ -26,17 +26,17 @@
     </div>
 
 
-    <div class="d-none d-md-flex text-uppercase fw-bold my-4" style="width: 100%; font-size: 2.75em; font-family: 'Montserrat', serif;">
-        <div style="margin-left: 10%;">
-            <ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon>
-            Our Dancers Are&nbsp;</div>
-        <div id="statement" style="font-size: 1em; color: #dd3333; text-decoration: underline;"></div>
-    </div>
+{{--    <div class="d-none d-md-flex text-uppercase fw-bold my-4" style="width: 100%; font-size: 2.75em; font-family: 'Montserrat', serif;">--}}
+{{--        <div style="margin-left: 10%;">--}}
+{{--            <ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon><ion-icon name="chevron-forward-outline"></ion-icon>--}}
+{{--            Our Dancers Are&nbsp;</div>--}}
+{{--        <div id="statement" style="font-size: 1em; color: #dd3333; text-decoration: underline;"></div>--}}
+{{--    </div>--}}
 
-    <div class="d-block d-md-none text-uppercase text-center fw-bold mt-4" style="width: 100%; height: 50vh; font-size: 2.75em; font-family: 'Montserrat', serif;">
-        <div>Our Dancers Are&nbsp;</div>
-        <div id="statement" style="font-size: 1em; color: #dd3333; text-decoration: underline;"></div>
-    </div>
+{{--    <div class="d-block d-md-none text-uppercase text-center fw-bold mt-4" style="width: 100%; height: 50vh; font-size: 2.75em; font-family: 'Montserrat', serif;">--}}
+{{--        <div>Our Dancers Are&nbsp;</div>--}}
+{{--        <div id="statement" style="font-size: 1em; color: #dd3333; text-decoration: underline;"></div>--}}
+{{--    </div>--}}
 
     <div class="container d-flex d-inline">
         @can('update', \App\Combo::class)
@@ -121,6 +121,27 @@
         @endif
     @endforeach
     <!-- END WELCOME COMBO CONTROL -->
+    </div>
+
+    <div>
+        <img src="/images/culture.jpg" alt="" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-sm-4">
+                <div class="d-flex align-items-center">
+                    <img src="/images/logo-bow-2022.png" alt="bow award" class="img-fluid" style="max-height: 300px;">
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="d-flex align-items-center" style="height: 100%;">
+                    <div class="text-center" style="font-size: 2em;">
+                        Best of Westchester 2022 Winner for Best Dance Studio and Best After-school Program
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 {{--    <div style="background: #dd3333;" class="text-white py-4">--}}
@@ -342,6 +363,13 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="my-5">
+        <h1 class="text-center"><span class="pages-heading px-5 py-3">Studio</span></h1>
+        <div class="d-flex justify-content-center mt-5">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/H3OVo_BU56U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
 
 
