@@ -155,3 +155,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     font-size: 1.25em;
 }
+
+#footer-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+#footer-nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+#footer-nav {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#footer-nav {
+    line-height: 2;
+}

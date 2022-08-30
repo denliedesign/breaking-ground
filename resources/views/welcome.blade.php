@@ -158,7 +158,7 @@
 {{--        </div>--}}
 {{--    </div>--}}
 
-    <div style="background: #f4f4f4;">
+    <div>
         <div class="container">
             <!-- AWARDS PHOTO CONTROL -->
             @can('update', \App\Photo::class)
@@ -360,12 +360,12 @@
 
     </div>
 
-    <div class="my-5">
-        <h1 class="text-center"><span class="pages-heading px-5 py-3">Studio</span></h1>
-        <div class="d-flex justify-content-center mt-5">
-            <iframe width="1120" height="630" src="https://www.youtube.com/embed/H3OVo_BU56U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
+{{--    <div class="my-5">--}}
+{{--        <h1 class="text-center"><span class="pages-heading px-5 py-3">Studio</span></h1>--}}
+{{--        <div class="d-flex justify-content-center mt-5">--}}
+{{--            <iframe width="1120" height="630" src="https://www.youtube.com/embed/H3OVo_BU56U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 
 @endsection
