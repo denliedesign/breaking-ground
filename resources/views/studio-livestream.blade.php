@@ -17,7 +17,7 @@
                 </div>
             @endif
 
-            @if($code == 'BGDC2223')
+            @if($code == 'bgparent23')
                 @include('connected')
             @else
                 <div style="height: 100%;" class="d-flex align-items-center justify-content-center text-center">
