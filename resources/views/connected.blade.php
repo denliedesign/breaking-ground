@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-sm">
                     Studio 5
-                    <iframe type="text/html" frameborder="0" width="480" height="394" src="//video.nest.com/embedded/live/BlLv8OfEs6?autoplay=1" allowfullscreen></iframe>
+                    <iframe type="text/html" frameborder="0" width="480" height="394" src="//video.nest.com/embedded/live/mH2k19YkM6?autoplay=1" allowfullscreen></iframe>
                 </div>
                 <div class="col-sm">
                     Studio 6
