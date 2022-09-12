@@ -27,7 +27,7 @@
                     <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faqs" type="button" role="tab" aria-controls="faqs" aria-selected="false">FAQ</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a href="https://www.supersaas.com/schedule/BGDC/Fittings" target="_blank" style="text-decoration: none;">
+                    <a href="https://letsmeet.io/breakinggrounddancecenter1/dancewear-fittings" target="_blank" style="text-decoration: none;">
                         <button class="nav-link" id="faq-tab" data-bs-toggle="tab" type="button" role="tab" aria-controls="fittings" aria-selected="false">Fittings</button>
                     </a>
                 </li>
