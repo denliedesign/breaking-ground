@@ -26,7 +26,7 @@
                             <a href="https://keap.page/ol717/nhsda-requirements.html" target="_blank">National Honor Society of Dance Arts</a>
                         </li>
                         <li>
-                            <a href="https://youtu.be/H3OVo_BU56U" target="_blank">Studio</a>
+                            <a href="https://youtu.be/lcFVd9_ge50" target="_blank">Studio</a>
                         </li>
                         <li>
                             <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>
