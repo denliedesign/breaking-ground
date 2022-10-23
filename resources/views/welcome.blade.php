@@ -3,27 +3,23 @@
 @section('content')
 
     <!-- Modal -->
-    <div id="summerModal" class="modal" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Breaking Ground Dance Center</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-{{--                    <p>Modal body text goes here.</p>--}}
-{{--                    <div class="col-sm d-flex justify-content-center align-items-center">--}}
-{{--                        <iframe width="100%" height="400" src="https://www.youtube.com/embed/hxNx0jQAA4g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+{{--    <div id="summerModal" class="modal" tabindex="-1">--}}
+{{--        <div class="modal-dialog">--}}
+{{--            <div class="modal-content">--}}
+{{--                <div class="modal-header">--}}
+{{--                    <h5 class="modal-title">Breaking Ground Dance Center</h5>--}}
+{{--                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>--}}
+{{--                </div>--}}
+{{--                <div class="modal-body">--}}
+{{--                    <video style="height: auto; width: 100%;" src="images/if-you-let-me-dance.mp4" controls="" poster="/images/if-you-let-me-dance-poster.png" type="video/mp4">--}}
+{{--                    </video>--}}
+{{--                    <div class="d-flex justify-content-center my-3">--}}
+{{--                        <a href="/programs" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">Find Your Class</div></a>--}}
 {{--                    </div>--}}
-                    <video style="height: auto; width: 100%;" src="images/if-you-let-me-dance.mp4" controls="" poster="/images/if-you-let-me-dance-poster.png" type="video/mp4">
-                    </video>
-                    <div class="d-flex justify-content-center my-3">
-                        <a href="/programs" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">Find Your Class</div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 
 {{--    <div class="d-none d-md-flex text-uppercase fw-bold my-4" style="width: 100%; font-size: 2.75em; font-family: 'Montserrat', serif;">--}}
@@ -137,6 +133,14 @@
 
     <div>
         <img src="/images/culture.jpg" alt="" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="container mt-5">
+        <video style="height: auto; width: 100%;" src="images/if-you-let-me-dance.mp4" controls="" poster="/images/if-you-let-me-dance-poster.png" type="video/mp4" class="shadow rounded">
+        </video>
+        <div class="d-flex justify-content-center my-3">
+            <a href="/programs" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">Find Your Class</div></a>
+        </div>
     </div>
 
 {{--    <div style="background: #dd3333;" class="text-white py-4">--}}
