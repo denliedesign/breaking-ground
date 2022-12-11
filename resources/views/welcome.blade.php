@@ -98,10 +98,11 @@
             </div>
         @endcan
 
-        @foreach($combos as $combo)
-            @if($combo->comboName == 'welcome' && $combo->comboSection == 'A')
+
                 <div class="container">
                     <div class="row my-5">
+                        @foreach($combos as $combo)
+                            @if($combo->comboName == 'welcome' && $combo->comboSection == 'A')
                         @include('/combos/admin')
                         <div class="col-sm d-flex justify-content-center">
                             <div>
@@ -114,20 +115,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm d-flex justify-content-center">
-                            <div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="/images/logo-bow-2022.png" alt="bow award" class="img-fluid" style="max-height: 300px;">
-                                </div>
-                                <div class="text-center" style="font-size: 1.25em;">
-                                    Best of Westchester 2022 Winner for Best Dance Studio and Best After-school Program
-                                </div>
-                            </div>
-                        </div>
+                            @endif
+                        @endforeach
+{{--                        <div class="col-sm d-flex justify-content-center">--}}
+{{--                            <div>--}}
+{{--                                <div class="d-flex justify-content-center">--}}
+{{--                                    <img src="/images/logo-bow-2022.png" alt="bow award" class="img-fluid" style="max-height: 300px;">--}}
+{{--                                </div>--}}
+{{--                                <div class="text-center" style="font-size: 1.25em;">--}}
+{{--                                    Best of Westchester 2022 Winner for Best Dance Studio and Best After-school Program--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
-        @endif
-    @endforeach
     <!-- END WELCOME COMBO CONTROL -->
     </div>
 
