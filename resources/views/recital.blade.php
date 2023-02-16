@@ -8,14 +8,56 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Recital</span></h1>
-            <div>
-                <p class="text-center">
-                    <a href="https://sites.google.com/view/breaking-ground-recital-2023/home" target="_blank">Recital Portal</a>
-                </p>
-                <div class="d-flex justify-content-center">
-                    <iframe width="744.8" height="418.95" src="https://www.youtube.com/embed/khfFEKuDfhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{--            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Recital</span></h1>--}}
+{{--            <div>--}}
+{{--                <div class="d-flex justify-content-center my-3">--}}
+{{--                    <a href="https://sites.google.com/view/breaking-ground-recital-2023/home" target="_blank" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">Recital Portal</div></a>--}}
+{{--                </div>--}}
+{{--                <div class="d-flex justify-content-center">--}}
+{{--                    <iframe width="744.8" height="418.95" src="https://www.youtube.com/embed/khfFEKuDfhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--}}
+{{--                </div>--}}
+
+                <div class="container d-flex d-inline">
+                    @can('update', \App\Combo::class)
+                        <div id="recital-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">Recital Page Controls</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
+                                    onClick="AddComboName('recital'); AddComboSection('A');">
+                                Add New
+                            </button>
+                            @include('/combos/form')
+                        </div>
+                    @endcan
                 </div>
+                <div>
+                    @foreach($combos as $combo)
+                        @if($combo->comboName == 'recital' && $combo->comboSection == 'A')
+                            <div>
+                                @if($combo->comboContent)
+                                    <p class="text-center my-2 py-0" style="text-align: center !important;">{!! $combo->comboContent !!}</p>
+                                    @endif
+                                @if($combo->comboBtn)
+                                       <div class="d-flex justify-content-center my-2">
+                                           <a href="{{ $combo->comboUrl }}" target="_blank" class="btn-opacity"><div class="shadow btn btn-lg btn-red btn-family">{{ $combo->comboBtn }}</div></a>
+                                       </div>
+                                   @endif
+                                    @if($combo->comboTitle)
+                                        <div class="d-flex justify-content-center my-2">
+                                            {!! $combo->comboTitle !!}
+                                        </div>
+                                        @endif
+                                    @if($combo->comboImage)
+                                        <div class="d-flex justify-content-center my-2">
+                                            <img src="{{ asset('/storage/' . $combo->comboImage) }}" class="img-fluid" alt="...">
+                                        </div>
+                                    @endif
+                                <div>@include('/combos/admin')</div>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+
 
 {{--                <!-- IMAGE CONTROL -->--}}
 {{--                @can('update', \App\Photo::class)--}}
