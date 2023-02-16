@@ -26,11 +26,11 @@
                             <a href="https://keap.page/ol717/nhsda-requirements.html" target="_blank">National Honor Society of Dance Arts</a>
                         </li>
                         <li>
-                            <a href="https://youtu.be/lcFVd9_ge50" target="_blank">Studio</a>
+                            <a href="https://youtu.be/lcFVd9_ge50" data-bs-toggle="modal" data-bs-target="#studioModal">Studio</a>
                         </li>
-                        <li>
-                            <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>--}}
+{{--                        </li>--}}
                         <li>
                             <a href="https://lt0z2swo.pages.infusionsoft.net/?cookieUUID=98545221-b97f-4ed5-8371-455cbede6dc8&affiliate=0" target="_blank">Request Makeup Class</a>
                         </li>
@@ -74,3 +74,28 @@
         </div>
     </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="studioModal" tabindex="-1" aria-labelledby="studioModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="studioModalLabel">Studio Tour</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/lcFVd9_ge50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            {{--            <div class="modal-footer">--}}
+            {{--                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>--}}
+            {{--            </div>--}}
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#studioModal').on('hidden.bs.modal', function (e) {
+        // do something...
+        $('#studioModal iframe').attr("src", jQuery("#studioModal  iframe").attr("src"));
+    });
+</script>

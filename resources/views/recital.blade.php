@@ -10,6 +10,9 @@
 
             <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Recital</span></h1>
             <div>
+                <p class="text-center">
+                    <a href="https://sites.google.com/view/breaking-ground-recital-2023/home" target="_blank">Recital Portal</a>
+                </p>
                 <div class="d-flex justify-content-center">
                     <iframe width="744.8" height="418.95" src="https://www.youtube.com/embed/khfFEKuDfhE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
