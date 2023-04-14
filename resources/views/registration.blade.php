@@ -9,9 +9,23 @@
         <div class="py-5">
 
             <h1 class="text-center"><span class="pages-heading px-5 py-3">Registration</span></h1>
-            <div class="d-flex justify-content-center my-5">
-                <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
-                <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
+            <div class="row my-5">
+                <div class="col-sm">
+                    <div class="d-flex justify-content-center">
+                        <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
+                    </div>
+                    <p class="text-center">
+                        <br>Current Member Registration
+                        <br>is on April 19th at 7:00am</p>
+                </div>
+                <div class="col-sm">
+                    <div class="d-flex justify-content-center">
+                        <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
+                    </div>
+                    <p class="text-center">
+                        <br>New Member Registration
+                        <br>is on May 3rd at 7:00am</p>
+                </div>
             </div>
             <h2 class="text-center fw-bold mb-5 mt-0">Our Tuition is ALL INCLUSIVE!</h2>
 
