@@ -29,6 +29,39 @@
 
 
 
+        <!-- ADDING ANOTHER IMAGE CONTROL HERE FOR TUITION BANNER -->
+
+       <!-- CONTROLS -->
+        @can('update', \App\Photo::class)
+            <div id="program-tuition-photo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
+                <span class="fw-bold mx-3">program tuition photo section A</span>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#photoModal"
+                        onClick="AddPhotoName('tuition'); AddPhotoSection('write-slug-here');">
+                    Add New
+                </button>
+                @include('/photos/form')
+            </div>
+        @endcan
+        <!-- END CONTROLS -->
+        <!-- SHOW -->
+
+        <div class="my-3">
+            @foreach($photos as $photo)
+                @if($photo->photoName == 'tuition' && $photo->photoSection == $program->slug)
+                        <div>
+                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="width: 100%;">
+                            @include('/photos/admin')
+                        </div>
+                @endif
+            @endforeach
+        </div>
+
+        <!-- END SHOW -->
+        <!-- END OF TUITION BANNER -->
+
+
+
         <div class="row">
             <div class="col-sm">
                 <!-- TABLE CONTROL -->
