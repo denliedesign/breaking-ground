@@ -37,7 +37,7 @@
                 <span class="fw-bold mx-3">program tuition photo section A</span>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#photoModal"
-                        onClick="AddPhotoName('tuition'); AddPhotoSection('write-slug-here');">
+                        onClick="AddPhotoName('write-slug-here'); AddPhotoSection('t');">
                     Add New
                 </button>
                 @include('/photos/form')
@@ -48,7 +48,7 @@
 
         <div class="my-3">
             @foreach($photos as $photo)
-                @if($photo->photoName == 'tuition' && $photo->photoSection == $program->slug)
+                @if($photo->photoName == $program->slug && $photo->photoSection == 't')
                         <div>
                             <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="width: 100%;">
                             @include('/photos/admin')
