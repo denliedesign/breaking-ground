@@ -14,17 +14,49 @@
                     <div class="d-flex justify-content-center">
                         <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
                     </div>
-                    <p class="text-center">
-                        <br>Current Member Registration
-                        <br>is on April 19th at 7:00am</p>
+                    @can('update', \App\Text::class)
+                        <div id="register-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">register text section A</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"
+                                    onClick="AddTextName('register'); AddTextSection('A');">
+                                Create New
+                            </button>
+                            @include('/texts/form')
+                        </div>
+                    @endcan
+                    @foreach($texts as $text)
+                        @if($text->name == 'register' && $text->section == 'A')
+                            <div class="text-center pt-3">
+                                {!! $text->content !!}
+                                @include('/texts/admin')
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
                 <div class="col-sm">
                     <div class="d-flex justify-content-center">
                         <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
                     </div>
-                    <p class="text-center">
-                        <br>New Member Registration
-                        <br>is on May 3rd at 7:00am</p>
+                    @can('update', \App\Text::class)
+                        <div id="register-text-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">register text section B</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"
+                                    onClick="AddTextName('register'); AddTextSection('B');">
+                                Create New
+                            </button>
+                            @include('/texts/form')
+                        </div>
+                    @endcan
+                    @foreach($texts as $text)
+                        @if($text->name == 'register' && $text->section == 'B')
+                            <div class="text-center pt-3">
+                                {!! $text->content !!}
+                                @include('/texts/admin')
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
             </div>
             <h2 class="text-center fw-bold mb-5 mt-0">Our Tuition is ALL INCLUSIVE!</h2>
@@ -40,11 +72,9 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="faq-tab" data-bs-toggle="tab" data-bs-target="#faqs" type="button" role="tab" aria-controls="faqs" aria-selected="false">FAQ</button>
                 </li>
-                <li class="nav-item" role="presentation">
-{{--                    <a href="https://letsmeet.io/breakinggrounddancecenter1/dancewear-fittings" target="_blank" style="text-decoration: none;">--}}
-                        <button class="nav-link" id="fittings-tab" data-bs-toggle="tab" data-bs-target="#fittings" type="button" role="tab" aria-controls="fittings" aria-selected="false">Fittings</button>
-{{--                    </a>--}}
-                </li>
+{{--                <li class="nav-item" role="presentation">--}}
+{{--                    <button class="nav-link" id="fittings-tab" data-bs-toggle="tab" data-bs-target="#fittings" type="button" role="tab" aria-controls="fittings" aria-selected="false">Fittings</button>--}}
+{{--                </li>--}}
             </ul>
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade" id="inclusive" role="tabpanel" aria-labelledby="inclusive-tab">
@@ -140,15 +170,6 @@
                         @endif
                     @endforeach
                 </div>
-
-                <div class="tab-pane fade" id="fittings" role="tabpanel" aria-labelledby="fittings-tab">
-                    <div>
-                        <iframe src="https://letsmeet.io/breakinggrounddancecenter1/fittings" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen></iframe>
-                    </div>
-{{--                    <iframe src="https://www.supersaas.com/schedule/BGDC/Fittings" style="border:none; min-height: 700px; width: 1px; min-width: 100%; *width: 100%;" name="booking" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" width="100%" height="100%" referrerpolicy="unsafe-url" allowfullscreen=""></iframe>--}}
-                </div>
-
-
 
             </div>
             <!-- end tabs -->

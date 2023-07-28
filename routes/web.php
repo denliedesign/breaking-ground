@@ -24,13 +24,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/parties', function () {
-    return view('parties');
-});
+//Route::get('/parties', function () {
+//    return view('parties');
+//});
 
-Route::post('/parties', function () {
-    return view('parties');
-});
+//Route::post('/parties', function () {
+//    return view('parties');
+//});
 
 Route::get('/events', function () {
     return view('events');
@@ -82,6 +82,10 @@ Route::get('/registration', function () {
 
 Route::get('/recital', function () {
     return view('/recital');
+});
+
+Route::get('/dress-code', function () {
+    return view('/dress-code');
 });
 
 Route::get('studio-livestream', function () {
