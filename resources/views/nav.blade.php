@@ -29,6 +29,9 @@
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/registration">Registration</a>
                     </li>
+                    <li class="nav-item text-center mx-1" style="width: auto;">
+                        <a class="nav-link" href="/dress-code">Dress Code</a>
+                    </li>
 {{--                    <li class="nav-item text-center mx-1" style="width: auto;">--}}
 {{--                        <a class="nav-link" href="/studio-livestream">Live Stream</a>--}}
 {{--                    </li>--}}
@@ -43,9 +46,6 @@
                     </li>
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/events">Events</a>
-                    </li>
-                    <li class="nav-item text-center mx-1" style="width: auto;">
-                        <a class="nav-link" href="/dress-code">Dress Code</a>
                     </li>
                     {{--                    <li class="nav-item" style=width: 100%;>--}}
                     {{--                        <a class="nav-link" href="/studio">Studio</a>--}}
