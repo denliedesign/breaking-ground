@@ -14,24 +14,24 @@
     <div class="container py-5">
 
         <div class="d-flex justify-content-center">
-{{--            <video width="320" height="180" controls>--}}
-{{--                <source src="{{ asset('/storage/' . $program->programVideo) }}" type="video/mp4">--}}
-{{--            </video>--}}
+            {{--            <video width="320" height="180" controls>--}}
+            {{--                <source src="{{ asset('/storage/' . $program->programVideo) }}" type="video/mp4">--}}
+            {{--            </video>--}}
             <div>
                 {!! $program->programVideo !!}
             </div>
         </div>
 
-            <div class="text-center">
-                <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">{{ $program->programTitle }}</span></h1>
-                <p>{!! $program->programDescription !!}</p>
-            </div>
+        <div class="text-center">
+            <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">{{ $program->programTitle }}</span></h1>
+            <p>{!! $program->programDescription !!}</p>
+        </div>
 
 
 
         <!-- ADDING ANOTHER IMAGE CONTROL HERE FOR TUITION BANNER -->
 
-       <!-- CONTROLS -->
+        <!-- CONTROLS -->
         @can('update', \App\Photo::class)
             <div id="program-tuition-photo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
                 <span class="fw-bold mx-3">program tuition photo section A</span>
@@ -43,16 +43,16 @@
                 @include('/photos/form')
             </div>
         @endcan
-        <!-- END CONTROLS -->
+    <!-- END CONTROLS -->
         <!-- SHOW -->
 
         <div class="my-3">
             @foreach($photos as $photo)
                 @if($photo->photoName == $program->slug && $photo->photoSection == 't')
-                        <div>
-                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="width: 100%;">
-                            @include('/photos/admin')
-                        </div>
+                    <div>
+                        <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="width: 100%;">
+                        @include('/photos/admin')
+                    </div>
                 @endif
             @endforeach
         </div>
@@ -62,8 +62,8 @@
 
 
 
-        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
-            <div class="col-sm my-3">
+        <div class="row">
+            <div class="col-sm">
                 <!-- TABLE CONTROL -->
                 @can('update', \App\Table::class)
                     <div id="programs-table" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
@@ -90,7 +90,7 @@
 
                 <table class="table mb-0">
                     @foreach($headings as $heading)
-                        @if($heading->headingName == "programs" && $heading->headingSection == "$program->id")
+                        @if($heading->headingName == 'programs' && $heading->headingSection == "$program->id")
                             <h2 class="table-title">{{ $heading->title }}</h2>
                             @include('/headings/admin')
                             @if($heading->head1 == true)
@@ -109,15 +109,15 @@
                     @livewire('tables-table', ['program' => $program])
                 </table>
             </div>
-{{--            @if($program->id == 3)--}}
-                <div class="col-sm my-3">
+            @if($program->id == 3)
+                <div class="col-sm">
                     <!-- TABLE CONTROL -->
                     @can('update', \App\Table::class)
                         <div id="programs-table" style="border:2px solid purple;" class="my-3 py-1 rounded shadow">
                             <span class="fw-bold mx-3">second heading table section</span>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#headingModal"
-                                    onClick="AddHeadingName('programs2'); AddHeadingSection('{{ $program->id }}');">
+                                    onClick="AddHeadingName('programs'); AddHeadingSection('Z');">
                                 Add Heading
                             </button>
                             @include('/headings/form')
@@ -126,7 +126,7 @@
                             <span class="fw-bold mx-3">second table section</span>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
-                                    onClick="AddTableName('programs2'); AddTableSection('{{ $program->id }}');">
+                                    onClick="AddTableName('programs'); AddTableSection('Z');">
                                 Add New Row
                             </button>
                             @include('/tables/form')
@@ -134,7 +134,7 @@
                     @endcan
                     <table class="table mb-0">
                         @foreach($headings as $heading)
-                            @if($heading->headingName == 'programs2' && $heading->headingSection == "$program->id")
+                            @if($heading->headingName == 'programs' && $heading->headingSection == "Z")
                                 <h2 class="table-title">{{ $heading->title }}</h2>
                                 @include('/headings/admin')
                                 @if($heading->head1 == true)
@@ -150,57 +150,10 @@
                             @endif
                         @endforeach
 
-                    @livewire('sets-table', ['program' => $program])
+                        @livewire('doubles-table', ['program' => $program])
                     </table>
                 </div>
-
-            <div class="col-sm my-3">
-                <!-- TABLE CONTROL -->
-                @can('update', \App\Table::class)
-                    <div id="programs-table" style="border:2px solid green;" class="my-3 py-1 rounded shadow">
-                        <span class="fw-bold mx-3">third heading table section</span>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#headingModal"
-                                onClick="AddHeadingName('programs3'); AddHeadingSection('{{ $program->id }}');">
-                            Add Heading
-                        </button>
-                        @include('/headings/form')
-                    </div>
-                    <div id="programs-table" style="border:2px solid green;" class="my-3 py-1 rounded shadow">
-                        <span class="fw-bold mx-3">third programs table section</span>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tableModal"
-                                {{--                                onClick="AddTableName('{{ substr(request()->route()->uri, 0, 8) }}'); AddTableSection('{{ $program->id }}');">--}}
-                                onClick="AddTableName('programs3'); AddTableSection('{{ $program->id }}');">
-                            Add New Row
-                        </button>
-                        @include('/tables/form')
-                    </div>
-            @endcan
-            <!-- END TABLE CONTROL -->
-
-                <table class="table mb-0">
-                    @foreach($headings as $heading)
-                        @if($heading->headingName == "programs3" && $heading->headingSection == "$program->id")
-                            <h2 class="table-title">{{ $heading->title }}</h2>
-                            @include('/headings/admin')
-                            @if($heading->head1 == true)
-                                <thead>
-                                <tr class="table-head">
-                                    <th>{{ $heading->head1 }}</th>
-                                    <th>{{ $heading->head2 }}</th>
-                                    <th>{{ $heading->head3 }}</th>
-                                    <th>{{ $heading->head4 }}</th>
-                                </tr>
-                                </thead>
-                            @endif
-                        @endif
-                    @endforeach
-
-                    @livewire('trios-table', ['program' => $program])
-                </table>
-            </div>
-{{--            @endif--}}
+            @endif
         </div>
 
         @include('register')
