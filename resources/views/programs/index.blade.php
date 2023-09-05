@@ -46,7 +46,7 @@
         <!-- next section -->
 
         <x-heading title="Intensive" />
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
             @foreach($programs as $program)
                 @if($program->category == 'intensive')
                     <div class="card-group col-sm text-center">
