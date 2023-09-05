@@ -223,7 +223,7 @@
         <div id="testimonial-bg-wrap" style="font-family: 'Montserrat', serif;">
             <div id="testimonial-bg">
 
-                <div id="carousel-testimonial-wrap" class="rounded shadow">
+                <div id="carousel-testimonial-wrap" class="">
                     <div id="carouselTestimonial" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -245,7 +245,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                        <div class="">
+                                        <div class="p-3">
                                             <p class="d-none d-md-block mb-0" style="font-size: 1em;">
                                                 My daughter is in her 3rd year attending Breaking Ground Dance Center and she really enjoys it!  She has also participated in some of the week-long summer camps and week-long camps during school holidays. The most recent camp she attended was the week of February break and she loved it! Her teacher always makes the activities very engaging and fun! Thank you to all of the staff at Breaking Ground Dance Center for truly making it a friendly and nurturing learning environment where students can flourish!
                                             </p>
@@ -300,7 +300,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div>
+                                <div class="p-3">
                                     <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
                                         Our daughter Sophia had an amazing experience at her recital! This year has taught her to come out of her shell a bit more and really boost her confidence with the help of Breaking Ground! Hats off to Marissa and the entire staff for doing such an amazing job of keeping our kids safe and smiling the whole year!
                                     </p>
@@ -325,7 +325,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div>
+                                <div class="p-3">
                                     <p class="d-none d-md-block mb-0" style="font-size: 1em;">
                                         My daughter Ella, a graduating senior and Senior Company member, ended her competition season on a perfect note with her best friend Lauren at her side.  The girls took one last picture together on stage and looking back, it really depicts the strong friendships that my daughter has gained through BG.  It was great that Ella and Lauren ended their time at BG together.  They still talk about how their friendship began with they were in Petite Ensemble.  Thank you to Marissa and her team for all they have done for Ella.  When she was 9, I remember asking her what she loves the most about dance and she said it made her feel free and that she can be herself.  I will always remember that!
                                         <span class="d-none d-md-inline"> -Teresa Agabob</span>
@@ -367,7 +367,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div class="px-4 py-3">
+                                <div class="p-3">
                                     <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
                                         My daughter has not only learned dance skills, but she has also made wonderful friends, gained confidence & self-esteem, & learned life skills. We truly love this school & all its teachers.
                                     </p>
@@ -392,7 +392,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div class="px-4 py-3">
+                                <div class="p-3">
                                     <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
                                         BG is my daughter’s favorite place on earth. She loves taking challenging classes and learning from the outstanding teachers. She couldn’t be happier there and as a parent that’s what makes me happy. This is our 7th year!
                                     </p>
@@ -417,7 +417,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div class="px-4 py-3">
+                                <div class="p-3">
                                     <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
                                         BG is filled with nurturing, talented staff. My daughters love being there, learning and being with friends. It is filled with positivity and they are bringing that home with them. Thank you!
                                     </p>

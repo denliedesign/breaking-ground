@@ -9,7 +9,7 @@
                 <div class="container">
                     <div class="py-5">
 
-                        <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">BG Parties!</span></h1>
+                        <x-heading title="BG Parties!" />
                     {{--            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>--}}
 
                     <!-- IMAGE CONTROL -->
@@ -73,7 +73,7 @@
                         <div class="row mt-3" style="margin: 0 auto;">
                             @foreach($photos as $photo)
                                 @if($photo->photoName == 'parties' && $photo->photoSection == 'B')
-                                    <div class="col">
+                                    <div class="col d-flex justify-content-center my-3">
                                         <img src="{{ asset('/storage/' . $photo->image) }}" alt="" class="img-fluid" style="max-height: 200px; max-width: 200px;">
                                         @include('/photos/admin')
                                     </div>
@@ -104,7 +104,7 @@
                         {{--            @endforeach--}}
 
                         <div class="py-5">
-                            <h1 class="text-center"><span class="pages-heading px-5 py-3">Events</span></h1>
+                            <x-heading title="Events" />
                         {{--            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>--}}
 
 

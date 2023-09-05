@@ -8,7 +8,7 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Dress Code</span></h1>
+            <x-heading title="Dress Code" />
 
             <!-- IMAGE CONTROL -->
             @can('update', \App\Combo::class)

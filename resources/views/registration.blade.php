@@ -8,11 +8,11 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center"><span class="pages-heading px-5 py-3">Registration</span></h1>
+            <x-heading title="Registration" />
             <div class="row my-5">
                 <div class="col-sm">
                     <div class="d-flex justify-content-center">
-                        <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
+                        <a class="main-button shadow m-3 text-center" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
                     </div>
                     @can('update', \App\Text::class)
                         <div id="register-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
@@ -36,7 +36,7 @@
                 </div>
                 <div class="col-sm">
                     <div class="d-flex justify-content-center">
-                        <a class="main-button shadow mx-3" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
+                        <a class="main-button shadow m-3 text-center" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
                     </div>
                     @can('update', \App\Text::class)
                         <div id="register-text-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">

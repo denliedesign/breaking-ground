@@ -9,7 +9,7 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Calendar</span></h1>
+            <x-heading title="Calendar" />
             {{--            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>--}}
 
             <div class="row">

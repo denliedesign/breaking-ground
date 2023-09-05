@@ -1,6 +1,6 @@
 <div style="background: #333; color: white;">
     <div class="container">
-        <div class="pt-3 pb-2 d-flex justify-content-center" id="top-nav">
+        <div class="pt-3 pb-2 d-flex justify-content-center text-center" id="top-nav">
             <div style="font-size: 0.85em;">
                 <ion-icon name="mail"></ion-icon> <a class="text-white" style="text-decoration: none;" href="mailto:breakinggrounddance@hotmail.com">breakinggrounddance@hotmail.com</a>
                 <div class="w-100 d-md-none"></div>

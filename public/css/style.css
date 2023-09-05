@@ -53,8 +53,8 @@ h1, h2, h3, h4, h5, h6 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 75%;
-    width: 75%;
+    height: 100%;
+    width: 95%;
     background: rgba(255, 255, 255, 0.75);
 }
 
@@ -62,10 +62,10 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
 }
 
-.pages-heading {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
+/*.pages-heading {*/
+/*    border-top: 1px solid gray;*/
+/*    border-bottom: 1px solid gray;*/
+/*}*/
 
 #parties-form {
     width: 100%;

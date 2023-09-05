@@ -16,8 +16,8 @@
 
         <!-- first section -->
 
-        <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">Classes</span></h1>
-        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+        <x-heading title="Classes" />
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
             @foreach($programs as $program)
                 @if($program->category == 'program')
 
@@ -45,7 +45,7 @@
 
         <!-- next section -->
 
-        <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">Intensive</span></h1>
+        <x-heading title="Intensive" />
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
             @foreach($programs as $program)
                 @if($program->category == 'intensive')

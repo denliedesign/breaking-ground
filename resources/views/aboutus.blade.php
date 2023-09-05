@@ -8,7 +8,7 @@
     <div class="container">
         <div class="py-5">
 
-            <h1 class="text-center mb-5"><span class="pages-heading px-5 py-3">About Us</span></h1>
+            <x-heading title="About Us" />
 
             @can('update', \App\Text::class)
                 <div id="about-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
@@ -30,7 +30,7 @@
                 @endif
             @endforeach
 
-            <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">Meet Our Dream Team!</span></h1>
+            <x-heading title="Meet Our Dream Team!" />
 
             <!-- IMAGE CONTROL -->
             @can('update', \App\Combo::class)
