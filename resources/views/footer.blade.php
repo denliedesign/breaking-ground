@@ -22,9 +22,9 @@
                 <div class="col-sm-3">
                     <h5 style="text-decoration: underline;">NAV</h5>
                     <ul id="footer-nav">
-                        <li>
-                            <a href="/studio-livestream">Live Stream</a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="/studio-livestream">Live Stream</a>--}}
+{{--                        </li>--}}
                         <li>
                             <a href="https://keap.page/ol717/nhsda-requirements.html" target="_blank">National Honor Society of Dance Arts</a>
                         </li>

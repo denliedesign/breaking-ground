@@ -88,13 +88,13 @@ Route::get('/dress-code', function () {
     return view('/dress-code');
 });
 
-Route::get('studio-livestream', function () {
-    return view('studio-livestream');
-});
-
-Route::post('studio-livestream', function () {
-    return view('studio-livestream');
-});
+//Route::get('studio-livestream', function () {
+//    return view('studio-livestream');
+//});
+//
+//Route::post('studio-livestream', function () {
+//    return view('studio-livestream');
+//});
 
 Route::resource('texts', TextController::class);
 Route::resource('photos', PhotoController::class);
