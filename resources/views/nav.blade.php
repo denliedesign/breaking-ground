@@ -24,7 +24,7 @@
                         <a class="nav-link" href="/programs">Classes</a>
                     </li>
                     <li class="nav-item text-center mx-1" style="width: auto;">
-                        <a class="nav-link" href="https://y2hq7g4d.pages.infusionsoft.net" target="_blank">Class Inquiry</a>
+                        <a class="nav-link" href="https://keap.page/ol717/class-inquiry.html" target="_blank">Class Inquiry</a>
                     </li>
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/registration">Registration</a>

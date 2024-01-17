@@ -35,7 +35,7 @@
 {{--                            <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>--}}
 {{--                        </li>--}}
                         <li>
-                            <a href="https://lt0z2swo.pages.infusionsoft.net/?cookieUUID=98545221-b97f-4ed5-8371-455cbede6dc8&affiliate=0" target="_blank">Request Makeup Class</a>
+                            <a href="https://keap.page/ol717/makeup-class-request-form.html" target="_blank">Request Makeup Class</a>
                         </li>
                         <li>
                             <a href="https://keap.page/ol717/studio-protocols.html" target="_blank">Studio Protocols</a>
