@@ -47,6 +47,9 @@
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/events">Events</a>
                     </li>
+                    <li class="nav-item text-center mx-1" style="width: auto;">
+                        <a class="nav-link" href="/parties">Parties</a>
+                    </li>
                     {{--                    <li class="nav-item" style=width: 100%;>--}}
                     {{--                        <a class="nav-link" href="/studio">Studio</a>--}}
                     {{--                    </li>--}}

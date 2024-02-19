@@ -24,13 +24,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-//Route::get('/parties', function () {
-//    return view('parties');
-//});
+Route::get('/parties', function () {
+    return view('parties');
+});
 
-//Route::post('/parties', function () {
-//    return view('parties');
-//});
+Route::post('/parties', function () {
+    return view('parties');
+});
 
 Route::get('/events', function () {
     return view('events');
