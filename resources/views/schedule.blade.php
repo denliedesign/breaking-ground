@@ -39,7 +39,7 @@
             <div>
                 <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 100px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 1</span>&nbsp;ages</div>
             </div>
-            <div class="d-flex justify-content-center mt-2">
+            <div class="row mt-2">
                 <x-checkbox category="age_requirement" info="6 months-24 months" />
                 <x-checkbox category="age_requirement" info="2 years" />
                 <x-checkbox category="age_requirement" info="3-4 years" />
@@ -53,7 +53,7 @@
             <div>
                 <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 100px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 2</span>&nbsp;styles</div>
             </div>
-            <div class="d-flex justify-content-center mt-2">
+            <div class="row mt-2">
                 <x-checkbox category="dance_style" info="ballet" />
                 <x-checkbox category="dance_style" info="tap" />
                 <x-checkbox category="dance_style" info="jazz" />
@@ -61,10 +61,12 @@
                 <x-checkbox category="dance_style" info="contemporary" />
                 <x-checkbox category="dance_style" info="Acro" />
                 <x-checkbox category="dance_style" info="musical theater" />
-                <input type="checkbox" class="form-check-input" id="creative_dance" name="dance_style[]" value="Creative Dance" checked hidden>
-                <label class="form-check-label ms-1 me-3" for="creative_dance"></label>
+                <div class="col-lg my-2" style="display: none;">
+                    <input type="checkbox" class="form-check-input" id="creative_dance" name="dance_style[]" value="Creative Dance" checked hidden>
+                    <label class="form-check-label ms-1 me-3" for="creative_dance"></label>
+                </div>
 
-                <div class="d-flex justify-content-center">
+                <div class="col-lg my-2">
                     <button type="button" class="btn btn-primary" id="selectAllStyles">Select All</button>
                 </div>
             </div>
@@ -73,7 +75,7 @@
             <div>
                 <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 100px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 3</span>&nbsp;days</div>
             </div>
-            <div class="d-flex justify-content-center mt-2">
+            <div class="row mt-2">
                 <x-checkbox category="day_of_week" info="Monday" />
                 <x-checkbox category="day_of_week" info="Tuesday" />
                 <x-checkbox category="day_of_week" info="Wednesday" />
@@ -81,7 +83,7 @@
                 <x-checkbox category="day_of_week" info="Friday" />
                 <x-checkbox category="day_of_week" info="Saturday" />
                 <x-checkbox category="day_of_week" info="Sunday" />
-                <div class="d-flex justify-content-center">
+                <div class="col-lg my-2">
                     <button type="button" class="btn btn-primary" id="selectAllDays">Select All</button>
                 </div>
             </div>
