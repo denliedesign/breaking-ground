@@ -23,6 +23,12 @@
             /*@import "~livewire-sortable";*/
         </style>
 
+        <!-- for sorting -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+        <!-- end for sorting -->
+
         <!-- Styles -->
         @livewireStyles
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -87,6 +93,30 @@
     <script>
         $(document).ready(function(){
             $("#summerModal").modal('show');
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const selectAllStylesButton = document.getElementById('selectAllStyles');
+            const styleCheckboxes = document.querySelectorAll('input[name="dance_style[]"]');
+
+            selectAllStylesButton.addEventListener('click', function() {
+                const isChecked = styleCheckboxes[0].checked; // Use the first checkbox as a reference
+                styleCheckboxes.forEach(checkbox => {
+                    checkbox.checked = !isChecked; // Toggle the checkboxes
+                });
+            });
+
+            const selectAllDaysButton = document.getElementById('selectAllDays');
+            const dayCheckboxes = document.querySelectorAll('input[name="day_of_week[]"]');
+
+            selectAllDaysButton.addEventListener('click', function() {
+                const isChecked = dayCheckboxes[0].checked; // Use the first checkbox as a reference
+                dayCheckboxes.forEach(checkbox => {
+                    checkbox.checked = !isChecked; // Toggle the checkboxes
+                });
+            });
         });
     </script>
 
