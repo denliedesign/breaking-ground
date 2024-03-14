@@ -82,6 +82,7 @@
             </form>
 
             <p class="text-center my-3">
+                <em><strong>* and **</strong> Recommendation required</em><br><br>
                 If you want to fine-tune your preferences feel free to go back and adjust.<br>We're here to help you find the perfect fit!
             </p>
             <div class="d-flex justify-content-center my-3">

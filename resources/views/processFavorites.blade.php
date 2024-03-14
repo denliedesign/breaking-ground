@@ -82,6 +82,7 @@
         </table>
 
         <p class="text-center my-4">
+            <em><strong>* and **</strong> Recommendation required</em><br><br>
             This page is not a submitted registration. You must hit the register now button and go through the process.
             <br>
             Current student registration begins <strong>April 19th</strong>. New student registration begins <strong>April 24th</strong>.
