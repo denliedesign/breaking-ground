@@ -59,19 +59,19 @@
                         <div>
                             @switch($class->age_requirement)
                                 @case('6 months-24 months')
-                                <a href="https://www.breakinggrounddance.com/programs/boppin-babies"><img src="/images/jammin-juniors.png" alt="" class="img-fluid" style="height: 100px; width: auto;"></a>
+                                <a href="https://www.breakinggrounddance.com/programs/boppin-babies"><img src="/images/jammin-juniors.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                                 @case('2 years')
                                 @case('3-4 years')
-                                <a href="https://www.breakinggrounddance.com/programs/spin-sparkle"><img src="/images/spin-and-sparkle.png" alt="" class="img-fluid" style="height: 100px; width: auto;"></a>
+                                <a href="https://www.breakinggrounddance.com/programs/spin-sparkle"><img src="/images/spin-and-sparkle.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                                 @case('5-6 years')
-                                <a href="https://www.breakinggrounddance.com/programs/beautiful-beginnings"><img src="/images/beautiful-beginnings.png" alt="" class="img-fluid" style="height: 100px; width: auto;"></a>
+                                <a href="https://www.breakinggrounddance.com/programs/beautiful-beginnings"><img src="/images/beautiful-beginnings.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                                 @case('7-9 years')
                                 @case('10-13 years')
                                 @case('14-18 years')
-                                <a href="https://www.breakinggrounddance.com/programs/core-program"><img src="/images/core-program.png" alt="" class="img-fluid" style="height: 100px; width: auto;"></a>
+                                <a href="https://www.breakinggrounddance.com/programs/core-program"><img src="/images/core-program.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                             @endswitch
                         </div>
