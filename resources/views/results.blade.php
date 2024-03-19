@@ -86,7 +86,7 @@
                 If you want to fine-tune your preferences feel free to go back and adjust.<br>We're here to help you find the perfect fit!
             </p>
             <div class="d-flex justify-content-center my-3">
-                <a href="/schedule" class="btn btn-outline-danger">Back</a>
+                <a href="/scheduler" class="btn btn-outline-danger">Back</a>
             </div>
 
         @else
