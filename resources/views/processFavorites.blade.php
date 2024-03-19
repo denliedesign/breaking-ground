@@ -62,9 +62,9 @@
                                 <a href="https://www.breakinggrounddance.com/programs/boppin-babies"><img src="/images/jammin-juniors.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                                 @case('2 years')
-                                @case('3-4 years')
                                 <a href="https://www.breakinggrounddance.com/programs/spin-sparkle"><img src="/images/spin-and-sparkle.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
+                                @case('3-4 years')
                                 @case('5-6 years')
                                 <a href="https://www.breakinggrounddance.com/programs/beautiful-beginnings"><img src="/images/beautiful-beginnings.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break

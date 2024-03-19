@@ -21,7 +21,7 @@
                         <a class="nav-link" href="/aboutus">About Us</a>
                     </li>
                     <li class="nav-item text-center mx-1" style="width: auto;">
-                        <a class="nav-link" href="/schedule">Schedule</a>
+                        <a class="nav-link" href="/scheduler">Scheduler</a>
                     </li>
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/programs">Classes</a>

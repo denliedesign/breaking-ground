@@ -24,7 +24,7 @@ class DanceController extends Controller
     public function showForm()
     {
         // You can add logic here if needed before displaying the form
-        return view('schedule');
+        return view('scheduler');
     }
 
     public function filterClasses(Request $request)

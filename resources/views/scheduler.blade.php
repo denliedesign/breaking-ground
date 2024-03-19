@@ -9,6 +9,10 @@
 
     <div class="container my-5">
         <p class="text-center"><em>Welcome to our brand new dance class search feature!<br>You're steps away from finding the perfect dance class tailored just for you and your family.</em></p>
+        <div class="text-center">
+            If you're looking for our <a href="/programs">Full Schedule</a> and not our Scheduler feature, please
+            <a class="btn btn-red btn-family shadow mx-3" href="/programs">Click Here!</a>
+        </div>
         <hr class="my-3" style="width: 60%; margin: 0 auto;">
         {{--        <h1 class="text-center">Family Flex Scheduler</h1>--}}
         {{--        <img src="/images/logo-family-flex-scheduler.jpg" alt="family flex scheduler" class="img-fluid">--}}

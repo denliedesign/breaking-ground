@@ -125,7 +125,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::get('/upload-form', [DanceController::class, 'showUploadForm'])->name('showUploadForm');
 Route::post('/import-dance-classes', [DanceController::class, 'importDanceClasses'])->name('importDanceClasses');
-Route::get('/schedule', [DanceController::class, 'showForm'])->name('schedule');
+Route::get('/scheduler', [DanceController::class, 'showForm'])->name('scheduler');
 Route::match(['get', 'post'], '/filter', [DanceController::class, 'filterClasses'])->name('filter');
 Route::get('/download-favorites', [DanceController::class, 'downloadFavorites'])->name('downloadFavorites');
 Route::match(['get', 'post'], '/processFavorites', [DanceController::class, 'processFavorites'])->name('processFavorites');
