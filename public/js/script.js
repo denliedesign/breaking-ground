@@ -42,3 +42,19 @@ function AddHeadingSection(c) {
 // function downToBottom() {
 //     gsap.to(window, {duration: 5, ease: 'power2.inOut', scrollTo: '#bottom'});
 // }
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to strip p tags from a given element
+    function stripParagraphTags(elementId) {
+        var element = document.getElementById(elementId);
+        if (element) {
+            // Get the inner HTML and remove p tags
+            var innerHTML = element.innerHTML;
+            innerHTML = innerHTML.replace(/<\/?p[^>]*>/g, '');
+            element.innerHTML = innerHTML;
+        }
+    }
+
+    // Call the function for the specific element
+    stripParagraphTags('without-p-tags');
+});

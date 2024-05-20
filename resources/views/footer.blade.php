@@ -14,6 +14,24 @@
                     <ion-icon name="pin"></ion-icon>
                     101 Castleton Street,
                     <br>Pleasantville, NY 10570
+                    @can('update', \App\Text::class)
+                        <div id="honor-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                            <span class="fw-bold mx-3">hours text section B</span>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"
+                                    onClick="AddTextName('hours'); AddTextSection('B');">
+                                Create New
+                            </button>
+                            @include('/texts/form')
+                        </div>
+                    @endcan
+                    @foreach($texts as $text)
+                        @if($text->name == 'hours' && $text->section == 'B')
+                            <br><br>
+                            <div id="without-p-tags"><ion-icon name="arrow-forward-circle-outline"></ion-icon> {!! $text->content !!}</div>
+                            @include('/texts/admin')
+                            @endif
+                            @endforeach
                     </p>
                     <a href="/">
                         <img src="/images/bgdc-logo-white.png" alt="logo" class="img-fluid pb-2">

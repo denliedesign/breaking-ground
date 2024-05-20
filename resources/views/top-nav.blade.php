@@ -12,3 +12,27 @@
         </div>
     </div>
 </div>
+
+
+    @can('update', \App\Text::class)
+        <div id="honor-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+            <span class="fw-bold mx-3">hours text section A</span>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"
+                    onClick="AddTextName('hours'); AddTextSection('A');">
+                Create New
+            </button>
+            @include('/texts/form')
+        </div>
+    @endcan
+    @foreach($texts as $text)
+        @if($text->name == 'hours' && $text->section == 'A')
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <div class="p-0 m-0">
+                    {!! $text->content !!}
+                    @include('/texts/admin')
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+        @endif
+    @endforeach
