@@ -62,6 +62,21 @@
     @yield('content')
     @include('testimonials')
     @include('footer')
+    <chat-widget
+        location-id="3SXsC3jSZTP1tv95gRS4"
+        style="--chat-widget-primary-color: #D01F30; --chat-widget-active-color:#D01F30 ;--chat-widget-bubble-color: #D01F30 ;"
+        sub-heading="Enter your question below and a team member will get right back to you!"
+        prompt-msg="Hi! It's Miss Laurel with Breaking Ground Dance Center. How can I help?"
+        support-contact="breakinggrounddance@hotmail.com"
+        success-msg="One of our team members will contact you within 24 hours!"
+        prompt-avatar="https://images.leadconnectorhq.com/image/f_webp/q_100/r_45/u_https://cdn.filesafe.space/locationPhotos%2F3SXsC3jSZTP1tv95gRS4%2Fchat-widget-person?alt=media&token=0c97f141-fad3-4735-abf2-f7acb506b7cb"
+        primary-color="#D01F30"
+        show-consent-checkbox="true" >
+    </chat-widget>
+    <script
+        src="https://widgets.leadconnectorhq.com/loader.js"
+        data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" >
+    </script>
     <div id="bottom"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
