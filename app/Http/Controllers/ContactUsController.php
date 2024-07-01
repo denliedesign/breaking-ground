@@ -6,6 +6,7 @@ use App\Mail\ContactUsMail;
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 use Anhskohbo\NoCaptcha\NoCaptcha;
 
@@ -41,20 +42,18 @@ class ContactUsController extends Controller
         }
 
         $recaptchaResponse = $request->input('g-recaptcha-response');
-        $client = new \GuzzleHttp\Client();
-        $response = $client->post('https://recaptchaenterprise.googleapis.com/v1/projects/' . env('RECAPTCHA_PROJECT_ID') . '/assessments?key=' . env('RECAPTCHA_API_KEY'), [
-            'json' => [
-                'event' => [
-                    'token' => $recaptchaResponse,
-                    'siteKey' => env('RECAPTCHA_SITEKEY'),
-                    'userIpAddress' => $request->ip(),
-                    'expectedAction' => 'LOGIN'
-                ]
-            ],
+        $recaptchaSecret = env('RECAPTCHA_SECRET');
+        $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
+
+        $response = Http::asForm()->post($recaptchaUrl, [
+            'secret' => $recaptchaSecret,
+            'response' => $recaptchaResponse,
+            'remoteip' => $request->ip(),
         ]);
 
-        $body = json_decode((string) $response->getBody(), true);
-        if (!isset($body['tokenProperties']['valid']) || !$body['tokenProperties']['valid']) {
+        $body = json_decode($response->getBody());
+
+        if (!$body->success) {
             return redirect('/')->with(['message' => 'reCAPTCHA validation failed. Please try again.']);
         }
 
