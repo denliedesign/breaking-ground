@@ -33,28 +33,11 @@ class ContactUsController extends Controller
             'email' => 'required|email',
             'message' => 'required',
             'submitted_at' => 'required|integer',
-            'g-recaptcha-response' => 'required', // Add this line to ensure the reCAPTCHA response is present
         ]);
 
         $submittedAt = $request->input('submitted_at');
         if (Carbon::createFromTimestamp($submittedAt)->diffInSeconds(now()) < 5) {
             return redirect('/')->with(['message' => 'Form submitted too quickly.']);
-        }
-
-        $recaptchaResponse = $request->input('g-recaptcha-response');
-        $recaptchaSecret = env('RECAPTCHA_SECRET');
-        $recaptchaUrl = 'https://www.google.com/recaptcha/api/siteverify';
-
-        $response = Http::asForm()->post($recaptchaUrl, [
-            'secret' => $recaptchaSecret,
-            'response' => $recaptchaResponse,
-            'remoteip' => $request->ip(),
-        ]);
-
-        $body = json_decode($response->getBody());
-
-        if (!$body->success) {
-            return redirect('/')->with(['message' => 'reCAPTCHA validation failed. Please try again.']);
         }
 
         Mail::to('customdenlie@gmail.com')->send(new ContactUsMail($data));
