@@ -13,8 +13,9 @@
         <label for="message" class="form-label">Message</label>
         <textarea name="message" class="form-control" id="message" rows="3"></textarea>
     </div>
-    {!! NoCaptcha::renderJs() !!}
-    {!! NoCaptcha::display() !!}
+    <div class="g-recaptcha" data-sitekey="6LdiLAUqAAAAACGcbv1vLq7_CiRell74yTyToD97" data-action="LOGIN"></div>
+{{--    {!! NoCaptcha::renderJs() !!}--}}
+{{--    {!! NoCaptcha::display() !!}--}}
     @csrf
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
