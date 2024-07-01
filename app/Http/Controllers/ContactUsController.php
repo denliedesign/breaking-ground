@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\ContactUsMail;
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Anhskohbo\NoCaptcha\NoCaptcha;
@@ -31,6 +32,21 @@ class ContactUsController extends Controller
             'message' => 'required',
             'g-recaptcha-response' => 'required|captcha',
         ]);
+
+        $recaptchaResponse = $request->input('g-recaptcha-response');
+        $client = new Client();
+        $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+            'form_params' => [
+                'secret' => env('RECAPTCHA_SECRET'),
+                'response' => $recaptchaResponse,
+                'remoteip' => $request->ip(),
+            ],
+        ]);
+
+        $body = json_decode((string) $response->getBody());
+        if (!$body->success) {
+            return back()->withErrors(['g-recaptcha-response' => 'ReCAPTCHA validation failed. Please try again.']);
+        }
 
         Mail::to('customdenlie@gmail.com')->send(new ContactUsMail($data));
 //        Mail::to('breakinggrounddance@hotmail.com')->send(new ContactUsMail($data));
