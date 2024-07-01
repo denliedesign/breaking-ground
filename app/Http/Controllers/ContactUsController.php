@@ -41,18 +41,21 @@ class ContactUsController extends Controller
         }
 
         $recaptchaResponse = $request->input('g-recaptcha-response');
-        $client = new Client();
-        $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
-            'form_params' => [
-                'secret' => env('RECAPTCHA_SECRET'),
-                'response' => $recaptchaResponse,
-                'remoteip' => $request->ip(),
+        $client = new \GuzzleHttp\Client();
+        $response = $client->post('https://recaptchaenterprise.googleapis.com/v1/projects/' . env('RECAPTCHA_PROJECT_ID') . '/assessments?key=' . env('RECAPTCHA_API_KEY'), [
+            'json' => [
+                'event' => [
+                    'token' => $recaptchaResponse,
+                    'siteKey' => env('RECAPTCHA_SITEKEY'),
+                    'userIpAddress' => $request->ip(),
+                    'expectedAction' => 'LOGIN'
+                ]
             ],
         ]);
 
-        $body = json_decode((string) $response->getBody());
-        if (!$body->success) {
-            return redirect('/')->with(['message' => 'ReCAPTCHA validation failed. Please try again.']);
+        $body = json_decode((string) $response->getBody(), true);
+        if (!isset($body['tokenProperties']['valid']) || !$body['tokenProperties']['valid']) {
+            return redirect('/')->with(['message' => 'reCAPTCHA validation failed. Please try again.']);
         }
 
         Mail::to('customdenlie@gmail.com')->send(new ContactUsMail($data));
