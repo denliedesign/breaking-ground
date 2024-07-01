@@ -35,6 +35,7 @@
         <link rel="stylesheet" href="/css/style.css">
 
         <!-- Scripts -->
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld5cwUqAAAAAEh4LWMKlesvE3XQLoXm24DOiYGq"></script>
         <script src="https://cdn.tiny.cloud/1/5kctqg5sa09fd8d1o32j7i9xpvwu1wzubt2thxu7k565blzw/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="{{ mix('js/app.js') }}" defer></script>

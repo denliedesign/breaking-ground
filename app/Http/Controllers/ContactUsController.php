@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\ContactUsMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Anhskohbo\NoCaptcha\NoCaptcha;
 
 class ContactUsController extends Controller
 {
@@ -28,9 +29,11 @@ class ContactUsController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
+            'g-recaptcha-response' => 'required|captcha',
         ]);
 
-        Mail::to('breakinggrounddance@hotmail.com')->send(new ContactUsMail($data));
+        Mail::to('customdenlie@gmail.com')->send(new ContactUsMail($data));
+//        Mail::to('breakinggrounddance@hotmail.com')->send(new ContactUsMail($data));
 
         return redirect('/')->with('message', 'Thanks for your message. We\'ll be in touch.');
 
