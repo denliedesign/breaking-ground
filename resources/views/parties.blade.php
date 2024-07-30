@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('banner-image', 'parties.jpg')
+@section('banner-image', 'banner-parties.png')
 @section('register-link', 'https://s23jdkmq.pages.infusionsoft.net/')
 
 @section('content')
