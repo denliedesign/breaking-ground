@@ -40,8 +40,8 @@ class ContactUsController extends Controller
             return redirect('/')->with(['message' => 'Form submitted too quickly.']);
         }
 
-        Mail::to('customdenlie@gmail.com')->send(new ContactUsMail($data));
-//    Mail::to('breakinggrounddance@hotmail.com')->send(new ContactUsMail($data));
+//        Mail::to('customdenlie@gmail.com')->send(new ContactUsMail($data));
+    Mail::to('breakinggrounddance@hotmail.com')->send(new ContactUsMail($data));
 
         return redirect('/')->with('message', 'Success! Thanks for your message. We\'ll be in touch.');
     }
