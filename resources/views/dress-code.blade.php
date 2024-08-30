@@ -10,6 +10,10 @@
 
             <x-heading title="Dress Code" />
 
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-red btn-family shadow mx-3" href="https://shop.breakinggrounddance.com/" target="_blank">Online Boutique</a>
+            </div>
+
             <!-- IMAGE CONTROL -->
             @can('update', \App\Combo::class)
                 <div id="dress-photo-b" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
