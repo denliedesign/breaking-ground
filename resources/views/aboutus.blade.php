@@ -45,7 +45,7 @@
                 </div>
             @endcan
 
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
                     @foreach($combos as $combo)
                         @if($combo->comboName == 'instructors' && $combo->comboSection == 'A')
                     <div class="col p-4">
