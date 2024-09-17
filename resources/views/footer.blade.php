@@ -52,12 +52,12 @@
 {{--                        <li>--}}
 {{--                            <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>--}}
 {{--                        </li>--}}
-                        <li>
-                            <a href="https://keap.page/ol717/makeup-class-request-form.html" target="_blank">Request Makeup Class</a>
-                        </li>
-                        <li>
-                            <a href="https://keap.page/ol717/studio-protocols.html" target="_blank">Studio Protocols</a>
-                        </li>
+{{--                        <li>--}}
+{{--                            <a href="https://keap.page/ol717/makeup-class-request-form.html" target="_blank">Request Makeup Class</a>--}}
+{{--                        </li>--}}
+{{--                        <li>--}}
+{{--                            <a href="https://keap.page/ol717/studio-protocols.html" target="_blank">Studio Protocols</a>--}}
+{{--                        </li>--}}
                     </ul>
                 </div>
                 <div class="col-sm mb-3">
