@@ -58,6 +58,46 @@
                 @endif
             @endforeach
 
+            <div>
+                <iframe
+
+                    src="https://link.enrollio.ai/widget/form/J6dOmGhnqKCbpw5Z9My5"
+
+                    style="width:100%;height:100%;border:none;border-radius:3px"
+
+                    id="inline-J6dOmGhnqKCbpw5Z9My5"
+
+                    data-layout="{'id':'INLINE'}"
+
+                    data-trigger-type="alwaysShow"
+
+                    data-trigger-value=""
+
+                    data-activation-type="alwaysActivated"
+
+                    data-activation-value=""
+
+                    data-deactivation-type="neverDeactivate"
+
+                    data-deactivation-value=""
+
+                    data-form-name="Birthday Party Form"
+
+                    data-height="864"
+
+                    data-layout-iframe-id="inline-J6dOmGhnqKCbpw5Z9My5"
+
+                    data-form-id="J6dOmGhnqKCbpw5Z9My5"
+
+                    title="Birthday Party Form"
+
+                >
+
+                </iframe>
+
+                <script src="https://link.enrollio.ai/js/form_embed.js"></script>
+            </div>
+
         <!-- IMAGE CONTROL -->
             @can('update', \App\Photo::class)
                 <div id="parties-photo-b" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
