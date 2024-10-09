@@ -97,6 +97,9 @@
 
                 <script src="https://link.enrollio.ai/js/form_embed.js"></script>
             </div>
+            <div>
+                <iframe src="https://link.enrollio.ai/widget/booking/1GTJfCymZe298SvX7L2d" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="1GTJfCymZe298SvX7L2d_1728406835066"></iframe><br><script src="https://link.enrollio.ai/js/form_embed.js" type="text/javascript"></script>
+            </div>
 
         <!-- IMAGE CONTROL -->
             @can('update', \App\Photo::class)
