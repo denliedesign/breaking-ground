@@ -58,72 +58,123 @@
                 @endif
             @endforeach
 
-            <div>
-                <iframe
+{{--            <div>--}}
+{{--                <iframe--}}
 
-                    src="https://link.enrollio.ai/widget/form/J6dOmGhnqKCbpw5Z9My5"
+{{--                    src="https://link.enrollio.ai/widget/form/J6dOmGhnqKCbpw5Z9My5"--}}
 
-                    style="width:100%;height:100%;border:none;border-radius:3px"
+{{--                    style="width:100%;height:100%;border:none;border-radius:3px"--}}
 
-                    id="inline-J6dOmGhnqKCbpw5Z9My5"
+{{--                    id="inline-J6dOmGhnqKCbpw5Z9My5"--}}
 
-                    data-layout="{'id':'INLINE'}"
+{{--                    data-layout="{'id':'INLINE'}"--}}
 
-                    data-trigger-type="alwaysShow"
+{{--                    data-trigger-type="alwaysShow"--}}
 
-                    data-trigger-value=""
+{{--                    data-trigger-value=""--}}
 
-                    data-activation-type="alwaysActivated"
+{{--                    data-activation-type="alwaysActivated"--}}
 
-                    data-activation-value=""
+{{--                    data-activation-value=""--}}
 
-                    data-deactivation-type="neverDeactivate"
+{{--                    data-deactivation-type="neverDeactivate"--}}
 
-                    data-deactivation-value=""
+{{--                    data-deactivation-value=""--}}
 
-                    data-form-name="Birthday Party Form"
+{{--                    data-form-name="Birthday Party Form"--}}
 
-                    data-height="864"
+{{--                    data-height="864"--}}
 
-                    data-layout-iframe-id="inline-J6dOmGhnqKCbpw5Z9My5"
+{{--                    data-layout-iframe-id="inline-J6dOmGhnqKCbpw5Z9My5"--}}
 
-                    data-form-id="J6dOmGhnqKCbpw5Z9My5"
+{{--                    data-form-id="J6dOmGhnqKCbpw5Z9My5"--}}
 
-                    title="Birthday Party Form"
+{{--                    title="Birthday Party Form"--}}
 
-                >
+{{--                >--}}
 
-                </iframe>
+{{--                </iframe>--}}
 
-                <script src="https://link.enrollio.ai/js/form_embed.js"></script>
-            </div>
+{{--                <script src="https://link.enrollio.ai/js/form_embed.js"></script>--}}
+{{--            </div>--}}
             <div>
                 <iframe src="https://link.enrollio.ai/widget/booking/1GTJfCymZe298SvX7L2d" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="1GTJfCymZe298SvX7L2d_1728406835066"></iframe><br><script src="https://link.enrollio.ai/js/form_embed.js" type="text/javascript"></script>
             </div>
 
-        <!-- IMAGE CONTROL -->
-            @can('update', \App\Photo::class)
-                <div id="parties-photo-b" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
-                    <span class="fw-bold mx-3">parties photo section B</span>
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#photoModal"
-                            onClick="AddPhotoName('parties'); AddPhotoSection('B');">
-                        Add New
-                    </button>
-                    @include('/photos/form')
+            <div class="container d-flex d-inline">
+                @can('update', \App\Combo::class)
+                    <div id="parties-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
+                        <span class="fw-bold mx-3">First Slider Only</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
+                                onClick="AddComboName('parties'); AddComboSection('A');">
+                            Add New
+                        </button>
+                        @include('/combos/form')
+                    </div>
+                    <div id="parties-combo-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                        <span class="fw-bold mx-3">All Other Sliders</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
+                                onClick="AddComboName('parties'); AddComboSection('B');">
+                            Add New
+                        </button>
+                        @include('/combos/form')
+                    </div>
+                @endcan
+            </div>
+
+            <div id="partiesSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach($combos as $combo)
+                        @if($combo->comboName == 'parties' && $combo->comboSection == 'A')
+                            <div class="carousel-item active" style="position: relative;">
+                                <a href="{{ $combo->comboTitle }}"><img src="{{ asset('/storage/' . $combo->comboImage) }}" class="d-block w-100" alt="..."></a>
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@include('/combos/admin')</div>
+                            </div>
+                        @endif
+                        @if($combo->comboName == 'parties' && $combo->comboSection == 'B')
+                            <div class="carousel-item">
+                                <a href="{{ $combo->comboTitle }}"><img src="{{ asset('/storage/' . $combo->comboImage) }}" class="d-block w-100" alt="..."></a>
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@include('/combos/admin')</div>
+                            </div>
+                        @endif
+                    @endforeach
                 </div>
-            @endcan
-            <div class="row mt-3" style="margin: 0 auto;">
-                @foreach($photos as $photo)
-                    @if($photo->photoName == 'parties' && $photo->photoSection == 'B')
-                        <div class="col d-flex justify-content-center my-3">
-                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" class="img-fluid" style="max-height: 200px; max-width: 200px;">
-                            @include('/photos/admin')
-                        </div>
-                    @endif
-                @endforeach
+                <button class="carousel-control-prev" type="button" data-bs-target="#partiesSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#partiesSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
+
+        <!-- IMAGE CONTROL -->
+{{--            @can('update', \App\Photo::class)--}}
+{{--                <div id="parties-photo-b" style="border:2px solid red;" class="my-3 py-1 rounded shadow">--}}
+{{--                    <span class="fw-bold mx-3">parties photo section B</span>--}}
+{{--                    <!-- Button trigger modal -->--}}
+{{--                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#photoModal"--}}
+{{--                            onClick="AddPhotoName('parties'); AddPhotoSection('B');">--}}
+{{--                        Add New--}}
+{{--                    </button>--}}
+{{--                    @include('/photos/form')--}}
+{{--                </div>--}}
+{{--            @endcan--}}
+{{--            <div class="row mt-3" style="margin: 0 auto;">--}}
+{{--                @foreach($photos as $photo)--}}
+{{--                    @if($photo->photoName == 'parties' && $photo->photoSection == 'B')--}}
+{{--                        <div class="col d-flex justify-content-center my-3">--}}
+{{--                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" class="img-fluid" style="max-height: 200px; max-width: 200px;">--}}
+{{--                            @include('/photos/admin')--}}
+{{--                        </div>--}}
+{{--                    @endif--}}
+{{--                @endforeach--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <!-- END IMAGE CONTROL -->
 
         {{--            @can('update', \App\Text::class)--}}
