@@ -44,7 +44,7 @@
 {{--                            <a href="/studio-livestream">Live Stream</a>--}}
 {{--                        </li>--}}
                         <li>
-                            <a href="https://keap.page/ol717/nhsda-requirements.html" target="_blank">National Honor Society of Dance Arts</a>
+                            <a href="https://link.enrollio.ai/widget/form/KGLRY0zZJC4E7vG4cXRG" target="_blank">National Honor Society of Dance Arts</a>
                         </li>
 {{--                        <li>--}}
 {{--                            <a href="https://youtu.be/lcFVd9_ge50" data-bs-toggle="modal" data-bs-target="#studioModal">Studio</a>--}}
