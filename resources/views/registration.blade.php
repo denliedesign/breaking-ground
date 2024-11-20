@@ -12,7 +12,7 @@
             <div class="row my-5">
                 <div class="col-sm">
                     <div class="d-flex justify-content-center">
-                        <a class="main-button shadow m-3 text-center" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J">Returning Students Register Here</a>
+                        <a class="main-button shadow m-3 text-center" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">Register Here</a>
                     </div>
                     @can('update', \App\Text::class)
                         <div id="register-text-a" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
