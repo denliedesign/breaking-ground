@@ -34,30 +34,30 @@
                         @endif
                     @endforeach
                 </div>
-                <div class="col-sm">
-                    <div class="d-flex justify-content-center">
-                        <a class="main-button shadow m-3 text-center" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>
-                    </div>
-                    @can('update', \App\Text::class)
-                        <div id="register-text-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
-                            <span class="fw-bold mx-3">register text section B</span>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"
-                                    onClick="AddTextName('register'); AddTextSection('B');">
-                                Create New
-                            </button>
-                            @include('/texts/form')
-                        </div>
-                    @endcan
-                    @foreach($texts as $text)
-                        @if($text->name == 'register' && $text->section == 'B')
-                            <div class="text-center pt-3">
-                                {!! $text->content !!}
-                                @include('/texts/admin')
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
+{{--                <div class="col-sm">--}}
+{{--                    <div class="d-flex justify-content-center">--}}
+{{--                        <a class="main-button shadow m-3 text-center" target="_blank" href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1">New Students Register Here</a>--}}
+{{--                    </div>--}}
+{{--                    @can('update', \App\Text::class)--}}
+{{--                        <div id="register-text-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">--}}
+{{--                            <span class="fw-bold mx-3">register text section B</span>--}}
+{{--                            <!-- Button trigger modal -->--}}
+{{--                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#textModal"--}}
+{{--                                    onClick="AddTextName('register'); AddTextSection('B');">--}}
+{{--                                Create New--}}
+{{--                            </button>--}}
+{{--                            @include('/texts/form')--}}
+{{--                        </div>--}}
+{{--                    @endcan--}}
+{{--                    @foreach($texts as $text)--}}
+{{--                        @if($text->name == 'register' && $text->section == 'B')--}}
+{{--                            <div class="text-center pt-3">--}}
+{{--                                {!! $text->content !!}--}}
+{{--                                @include('/texts/admin')--}}
+{{--                            </div>--}}
+{{--                        @endif--}}
+{{--                    @endforeach--}}
+{{--                </div>--}}
             </div>
             <h2 class="text-center fw-bold mb-5 mt-0">Our Tuition is ALL INCLUSIVE!</h2>
 
