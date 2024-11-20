@@ -90,7 +90,7 @@
 
         <div class="d-flex justify-content-center">
             <!-- Enroll Button -->
-            <a href="https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1" target="_blank" class="btn btn-lg text-white mx-2 btn-primary">Register Now!</a>
+            <a href="https://portal.akadadance.com/auth?schoolId=363" target="_blank" class="btn btn-lg text-white mx-2 btn-primary">Register Now!</a>
 
             <div class="d-flex align-items-center">
                 <!-- Download Button -->

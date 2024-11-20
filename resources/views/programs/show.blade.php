@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('banner-image', 'bg-bg.jpg')
-@section('register-link', 'https://app.akadadance.com/customer/login?schoolId=AK600070J&c=1')
+@section('register-link', 'https://portal.akadadance.com/auth?schoolId=363')
 
 @section('content')
 
