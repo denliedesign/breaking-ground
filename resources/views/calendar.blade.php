@@ -14,7 +14,7 @@
             <div class="d-flex align-items-center justify-content-center my-4">
                 <!-- Download Button -->
                 <div>
-                    <a href="{{ asset('/images/calendar-24-25.png') }}" download class="btn text-white mx-2 btn-red">
+                    <a href="{{ asset('/images/2025-calendar.jpg') }}" download class="btn text-white mx-2 btn-red">
                         Download
                     </a>
                 </div>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div>
-                <img src="/images/calendar-24-25.png" alt="" class="img-fluid">
+                <img src="/images/2025-calendar.jpg" alt="" class="img-fluid">
             </div>
 
 {{--            <div class="row">--}}
