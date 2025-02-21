@@ -50,7 +50,7 @@
             @foreach($photos as $photo)
                 @if($photo->photoName == $program->slug && $photo->photoSection == 't')
                         <div class="d-flex justify-content-center">
-                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" class="img-fluid">
+                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" class="img-fluid my-1">
                             @include('/photos/admin')
                         </div>
                 @endif
