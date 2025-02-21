@@ -50,7 +50,7 @@
             @foreach($photos as $photo)
                 @if($photo->photoName == $program->slug && $photo->photoSection == 't')
                         <div>
-                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" style="width: 100%;">
+                            <img src="{{ asset('/storage/' . $photo->image) }}" alt="" class="img-fluid">
                             @include('/photos/admin')
                         </div>
                 @endif
