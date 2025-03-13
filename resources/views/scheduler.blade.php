@@ -49,8 +49,8 @@
                 <x-checkbox category="age_requirement" info="3-4 years" />
                 <x-checkbox category="age_requirement" info="5-6 years" />
                 <x-checkbox category="age_requirement" info="7-9 years" />
-                <x-checkbox category="age_requirement" info="10-13 years" />
-                <x-checkbox category="age_requirement" info="14-18 years" />
+                <x-checkbox category="age_requirement" info="10-12 years" />
+                <x-checkbox category="age_requirement" info="13-18 years" />
             </div>
 
             <div class="mb-5"></div>

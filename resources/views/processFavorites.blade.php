@@ -69,8 +69,8 @@
                                 <a href="https://www.breakinggrounddance.com/programs/beautiful-beginnings"><img src="/images/beautiful-beginnings.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                                 @case('7-9 years')
-                                @case('10-13 years')
-                                @case('14-18 years')
+                                @case('10-12 years')
+                                @case('13-18 years')
                                 <a href="https://www.breakinggrounddance.com/programs/core-program"><img src="/images/core-program.png" alt="" class="img-fluid" style="height: auto; width: 100%; max-width: 200px;"></a>
                                 @break
                             @endswitch
