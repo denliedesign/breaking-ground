@@ -22,12 +22,12 @@ class DanceClassesImport implements ToModel, WithUpserts
     public function model(array $row)
     {
         return new DanceClass([
-            'id' => $row[0], // Assuming the ID is in the first column of your Excel file
-            'name' => $row[3],
-            'age_requirement' => $row[4],
-            'dance_style' => $row[5],
-            'day_of_week' => $row[1],
-            'time' => $row[2],
+            'id' => $row[1], // Assuming the ID is in the first column of your Excel file
+            'name' => $row[4],
+            'age_requirement' => $row[5],
+            'dance_style' => $row[6],
+            'day_of_week' => $row[2],
+            'time' => $row[3],
             // Add more fields as needed
         ]);
     }
