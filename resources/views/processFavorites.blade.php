@@ -85,7 +85,7 @@
             <em><strong>* and **</strong> Recommendation required</em><br><br>
             This page is not a submitted registration. You must hit the register now button and go through the process.
             <br>
-            Current student registration begins <strong>April 19th</strong>. New student registration begins <strong>April 24th</strong>.
+            Student registration begins for Ages 6 & under <strong>April 22nd</strong>, for Ages 7-9 <strong>April 23rd</strong>, and for Ages 10+ <strong>April 24th</strong>.
         </p>
 
         <div class="d-flex justify-content-center">
