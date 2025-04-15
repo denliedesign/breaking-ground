@@ -254,3 +254,67 @@ h1, h2, h3, h4, h5, h6 {
 .styled-checkbox:checked::before {
     display: block; /* Show when checked */
 }
+
+.masonry {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.gallery {
+    column-count: 4;  /* Number of columns */
+    column-gap: 10px; /* Space between columns */
+    width: 90vw;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures images are block level for better handling in columns */
+    margin-bottom: 10px; /* Space below each image */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .gallery {
+        column-count: 3; /* Reduce columns on large tablets */
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery {
+        column-count: 2; /* Further reduce columns on smaller tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 1; /* Single column on mobile devices */
+    }
+
+    .fold-nav {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery {
+        width: 100vw;
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .gallery img {
+        margin-bottom: 5px; /* Reduce space below each image */
+    }
+
+    .fold-nav {
+        font-size: 14px;
+    }
+}
+

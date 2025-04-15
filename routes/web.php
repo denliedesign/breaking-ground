@@ -89,6 +89,10 @@ Route::get('/dress-code', function () {
     return view('/dress-code');
 });
 
+Route::get('gallery', function () {
+    return view('gallery');
+});
+
 //Route::get('studio-livestream', function () {
 //    return view('studio-livestream');
 //});
