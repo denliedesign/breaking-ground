@@ -8,7 +8,7 @@
     <div class="container">
         <div class="py-5">
 
-            <x-heading title="Registration" />
+            <x-heading title="Pricing" />
             <div class="row my-5">
                 <div class="col-sm">
                     <div class="d-flex justify-content-center">

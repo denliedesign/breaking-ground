@@ -73,8 +73,8 @@ Route::post('/honor-society', function () {
     return view('honor-society');
 });
 
-Route::get('/registration', function () {
-    return view('registration');
+Route::get('/pricing', function () {
+    return view('pricing');
 });
 
 //Route::post('/faq', function () {
