@@ -12,6 +12,56 @@
             <x-heading title="BG Parties!" />
         {{--            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>--}}
 
+            <div class="container d-flex d-inline">
+                @can('update', \App\Combo::class)
+                    <div id="parties-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
+                        <span class="fw-bold mx-3">First Slider Only</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
+                                onClick="AddComboName('parties'); AddComboSection('A');">
+                            Add New
+                        </button>
+                        @include('/combos/form')
+                    </div>
+                    <div id="parties-combo-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
+                        <span class="fw-bold mx-3">All Other Sliders</span>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
+                                onClick="AddComboName('parties'); AddComboSection('B');">
+                            Add New
+                        </button>
+                        @include('/combos/form')
+                    </div>
+                @endcan
+            </div>
+
+            <div id="partiesSlider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach($combos as $combo)
+                        @if($combo->comboName == 'parties' && $combo->comboSection == 'A')
+                            <div class="carousel-item active" style="position: relative;">
+                                <a href="{{ $combo->comboTitle }}"><img src="{{ asset('/storage/' . $combo->comboImage) }}" class="d-block w-100" alt="..."></a>
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@include('/combos/admin')</div>
+                            </div>
+                        @endif
+                        @if($combo->comboName == 'parties' && $combo->comboSection == 'B')
+                            <div class="carousel-item">
+                                <a href="{{ $combo->comboTitle }}"><img src="{{ asset('/storage/' . $combo->comboImage) }}" class="d-block w-100" alt="..."></a>
+                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@include('/combos/admin')</div>
+                            </div>
+                        @endif
+                    @endforeach
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#partiesSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#partiesSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
         <!-- IMAGE CONTROL -->
             @can('update', \App\Photo::class)
                 <div id="parties-photo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
@@ -101,55 +151,7 @@
                 <iframe src="https://link.enrollio.ai/widget/booking/1GTJfCymZe298SvX7L2d" style="width: 100%;border:none;overflow: hidden;" scrolling="no" id="1GTJfCymZe298SvX7L2d_1728406835066"></iframe><br><script src="https://link.enrollio.ai/js/form_embed.js" type="text/javascript"></script>
             </div>
 
-            <div class="container d-flex d-inline">
-                @can('update', \App\Combo::class)
-                    <div id="parties-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
-                        <span class="fw-bold mx-3">First Slider Only</span>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
-                                onClick="AddComboName('parties'); AddComboSection('A');">
-                            Add New
-                        </button>
-                        @include('/combos/form')
-                    </div>
-                    <div id="parties-combo-b" style="border:2px solid orange;" class="my-3 py-1 rounded shadow">
-                        <span class="fw-bold mx-3">All Other Sliders</span>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
-                                onClick="AddComboName('parties'); AddComboSection('B');">
-                            Add New
-                        </button>
-                        @include('/combos/form')
-                    </div>
-                @endcan
-            </div>
 
-            <div id="partiesSlider" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    @foreach($combos as $combo)
-                        @if($combo->comboName == 'parties' && $combo->comboSection == 'A')
-                            <div class="carousel-item active" style="position: relative;">
-                                <a href="{{ $combo->comboTitle }}"><img src="{{ asset('/storage/' . $combo->comboImage) }}" class="d-block w-100" alt="..."></a>
-                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@include('/combos/admin')</div>
-                            </div>
-                        @endif
-                        @if($combo->comboName == 'parties' && $combo->comboSection == 'B')
-                            <div class="carousel-item">
-                                <a href="{{ $combo->comboTitle }}"><img src="{{ asset('/storage/' . $combo->comboImage) }}" class="d-block w-100" alt="..."></a>
-                                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">@include('/combos/admin')</div>
-                            </div>
-                        @endif
-                    @endforeach
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#partiesSlider" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#partiesSlider" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
         </div>
 
         <!-- IMAGE CONTROL -->
