@@ -100,11 +100,11 @@
 
 
                 <div class="container mx-1">
-                    <div class="row my-5">
+                    <div class="my-5">
                         @foreach($combos as $combo)
                             @if($combo->comboName == 'welcome' && $combo->comboSection == 'A')
                         @include('/combos/admin')
-                        <div class="col-sm d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <div>
                                 <div class="w-100 d-flex justify-content-center">
                                     <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="" class="img-fluid">
@@ -153,11 +153,11 @@
 
 
         <div class="container mx-1">
-            <div class="row my-5">
+            <div class="my-5">
                 @foreach($combos as $combo)
                     @if($combo->comboName == 'welcome' && $combo->comboSection == 'B')
                         @include('/combos/admin')
-                        <div class="col-sm d-flex justify-content-center">
+                        <div class="d-flex justify-content-center">
                             <div>
                                 <div class="w-100 d-flex justify-content-center">
                                     <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="" class="img-fluid">
