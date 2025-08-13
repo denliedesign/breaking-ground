@@ -107,7 +107,7 @@
                         <div class="col-sm d-flex justify-content-center">
                             <div>
                                 <div class="w-100 d-flex justify-content-center">
-                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="">
+                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="" class="img-fluid">
 {{--                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="max-height: 300px; width: auto;">--}}
                                 </div>
                                 <div style="font-size: 1em;">
@@ -160,7 +160,7 @@
                         <div class="col-sm d-flex justify-content-center">
                             <div>
                                 <div class="w-100 d-flex justify-content-center">
-                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="">
+                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="" class="img-fluid">
                                 </div>
                                 <div style="font-size: 1em;">
                                     <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
