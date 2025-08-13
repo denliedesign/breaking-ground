@@ -99,7 +99,7 @@
         @endcan
 
 
-                <div class="container">
+                <div class="container mx-1">
                     <div class="row my-5">
                         @foreach($combos as $combo)
                             @if($combo->comboName == 'welcome' && $combo->comboSection == 'A')
@@ -134,6 +134,54 @@
 
     <div>
         <img src="/images/culture.jpg" alt="" style="width: 100%; height: auto;">
+    </div>
+
+    <div class="mx-3">
+        <!-- WELCOME COMBO CONTROL -->
+        @can('update', \App\Combo::class)
+            <div id="welcome-combo-a" style="border:2px solid red;" class="my-3 py-1 rounded shadow">
+                <span class="fw-bold mx-3">welcome combo section b</span>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#comboModal"
+                        onClick="AddComboName('welcome'); AddComboSection('B');">
+                    Add New
+                </button>
+                @include('/combos/form')
+            </div>
+        @endcan
+
+
+        <div class="container mx-1">
+            <div class="row my-5">
+                @foreach($combos as $combo)
+                    @if($combo->comboName == 'welcome' && $combo->comboSection == 'B')
+                        @include('/combos/admin')
+                        <div class="col-sm d-flex justify-content-center">
+                            <div>
+                                <div class="d-flex justify-content-center">
+                                    <img src="{{ asset('/storage/' . $combo->comboImage) }}" alt="" style="max-height: 300px; width: auto;">
+                                </div>
+                                <div style="font-size: 1em;">
+                                    <h2 class="text-uppercase" style="color: #dd3333;">{{ $combo->comboTitle }}</h2>
+                                    {!! $combo->comboContent !!}
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+                @endforeach
+                {{--                        <div class="col-sm d-flex justify-content-center">--}}
+                {{--                            <div>--}}
+                {{--                                <div class="d-flex justify-content-center">--}}
+                {{--                                    <img src="/images/logo-bow-2022.png" alt="bow award" class="img-fluid" style="max-height: 300px;">--}}
+                {{--                                </div>--}}
+                {{--                                <div class="text-center" style="font-size: 1.25em;">--}}
+                {{--                                    Best of Westchester 2022 Winner for Best Dance Studio and Best After-school Program--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                        </div>--}}
+            </div>
+        </div>
+        <!-- END WELCOME COMBO B CONTROL -->
     </div>
 
     <div class="container mt-5">

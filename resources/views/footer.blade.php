@@ -3,6 +3,13 @@
         <div class="pt-4 pb-1" id="footer">
             <div class="row">
                 <div class="col-sm-3">
+                    <div class="row row-cols-3 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 mb-2">
+                        <div class="d-flex justify-content-center"><a href="/"><img src="/images/bgdc-logo-white.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto;"></a></div>
+                        <div class="d-flex justify-content-center"><img src="/images/logo-mtjgd.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto;"></div>
+                        <div class="d-flex justify-content-center"><img src="/images/logo-bow-2022.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto; filter: invert(1);"></div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
                     <h5 style="text-decoration: underline;">Contact Us</h5>
                     <p>
                     <ion-icon name="mail"></ion-icon>
@@ -33,32 +40,29 @@
                             @endif
                             @endforeach
                     </p>
-                    <a href="/">
-                        <img src="/images/bgdc-logo-white.png" alt="logo" class="img-fluid pb-2">
-                    </a>
-                </div>
-                <div class="col-sm-3">
-                    <h5 style="text-decoration: underline;">NAV</h5>
-                    <ul id="footer-nav">
-{{--                        <li>--}}
-{{--                            <a href="/studio-livestream">Live Stream</a>--}}
-{{--                        </li>--}}
-                        <li>
-                            <a href="https://link.enrollio.ai/widget/form/KGLRY0zZJC4E7vG4cXRG" target="_blank">National Honor Society of Dance Arts</a>
-                        </li>
-{{--                        <li>--}}
-{{--                            <a href="https://youtu.be/lcFVd9_ge50" data-bs-toggle="modal" data-bs-target="#studioModal">Studio</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="https://keap.page/ol717/makeup-class-request-form.html" target="_blank">Request Makeup Class</a>--}}
-{{--                        </li>--}}
-{{--                        <li>--}}
-{{--                            <a href="https://keap.page/ol717/studio-protocols.html" target="_blank">Studio Protocols</a>--}}
-{{--                        </li>--}}
-                    </ul>
+                        <div>
+                            <h5 style="text-decoration: underline;">NAV</h5>
+                            <ul id="footer-nav">
+                                {{--                        <li>--}}
+                                {{--                            <a href="/studio-livestream">Live Stream</a>--}}
+                                {{--                        </li>--}}
+                                <li>
+                                    <a href="https://link.enrollio.ai/widget/form/KGLRY0zZJC4E7vG4cXRG" target="_blank">National Honor Society of Dance Arts</a>
+                                </li>
+                                {{--                        <li>--}}
+                                {{--                            <a href="https://youtu.be/lcFVd9_ge50" data-bs-toggle="modal" data-bs-target="#studioModal">Studio</a>--}}
+                                {{--                        </li>--}}
+                                {{--                        <li>--}}
+                                {{--                            <a href="https://keap.app/booking/breakinggrounddancecenter1/bgdc-tourmeeting" target="_blank">Schedule A Tour</a>--}}
+                                {{--                        </li>--}}
+                                {{--                        <li>--}}
+                                {{--                            <a href="https://keap.page/ol717/makeup-class-request-form.html" target="_blank">Request Makeup Class</a>--}}
+                                {{--                        </li>--}}
+                                {{--                        <li>--}}
+                                {{--                            <a href="https://keap.page/ol717/studio-protocols.html" target="_blank">Studio Protocols</a>--}}
+                                {{--                        </li>--}}
+                            </ul>
+                        </div>
                 </div>
                 <div class="col-sm mb-3">
                     @include('/contact/create')
