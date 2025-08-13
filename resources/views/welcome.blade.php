@@ -99,7 +99,7 @@
         @endcan
 
 
-                <div class="container mx-1">
+                <div class="mx-5">
                     <div class="my-5">
                         @foreach($combos as $combo)
                             @if($combo->comboName == 'welcome' && $combo->comboSection == 'A')
@@ -152,7 +152,7 @@
         @endcan
 
 
-        <div class="container mx-1">
+        <div class="mx-5">
             <div class="my-5">
                 @foreach($combos as $combo)
                     @if($combo->comboName == 'welcome' && $combo->comboSection == 'B')
