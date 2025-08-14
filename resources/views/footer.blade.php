@@ -6,7 +6,7 @@
                     <div class="row row-cols-3 row-cols-sm-1 row-cols-md-1 row-cols-lg-1 mb-2">
                         <div class="d-flex justify-content-center"><a href="/"><img src="/images/bgdc-logo-white.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto;"></a></div>
                         <div class="d-flex justify-content-center"><img src="/images/logo-mtjgd.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto;"></div>
-                        <div class="d-flex justify-content-center"><img src="/images/logo-bow-2022.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto; filter: invert(1);"></div>
+                        <div class="d-flex justify-content-center"><img src="/images/logo-bow-24.png" alt="logo" class="pb-2" style="max-height: 120px; width: auto; filter: invert(1);"></div>
                     </div>
                 </div>
                 <div class="col-sm-3">

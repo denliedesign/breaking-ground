@@ -39,8 +39,8 @@
                                     <div class="accordion" id="accordionExample">
                                         <div class="accordion-item border-0">
                                             <h2 class="accordion-header" id="headingOne">
-                                                <div class="acc-btn position-relative w-100" data-bs-toggle="collapse" data-bs-target="#{{ $combo->comboTag }}" aria-expanded="true" aria-controls="{{ $combo->comboTag }}">
-                                                    <div class="position-absolute top-50 start-50 translate-middle">{{ $combo->comboTitle }}</div>
+                                                <div class="acc-btn position-relative w-100 pb-3" data-bs-toggle="collapse" data-bs-target="#{{ $combo->comboTag }}" aria-expanded="true" aria-controls="{{ $combo->comboTag }}">
+                                                    <div class="w-100 position-absolute top-50 start-50 translate-middle">{{ $combo->comboTitle }}</div>
                                                     <div class="d-flex justify-content-end"><ion-icon onclick="this.style.transform = this.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';" style="transition: transform 0.3s;" name="chevron-down"></ion-icon></div>
                                                 </div>
                                             </h2>
