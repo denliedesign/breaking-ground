@@ -88,26 +88,47 @@
             @endcan
             <!-- END TABLE CONTROL -->
 
-                <table class="table mb-0">
+                <div class="accordion my-3" id="programsAccordion">
                     @foreach($headings as $heading)
-                        @if($heading->headingName == "programs" && $heading->headingSection == "$program->id")
-                            <h2 class="table-title">{{ $heading->title }}</h2>
-                            @include('/headings/admin')
-                            @if($heading->head1 == true)
-                                <thead>
-                                <tr class="table-head">
-                                    <th>{{ $heading->head1 }}</th>
-                                    <th>{{ $heading->head2 }}</th>
-                                    <th>{{ $heading->head3 }}</th>
-                                    <th>{{ $heading->head4 }}</th>
-                                </tr>
-                                </thead>
-                            @endif
+                        @if($heading->headingName == 'programs' && $heading->headingSection == "$program->id")
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" style="text-transform: uppercase;" id="headingPrograms{{ $heading->id }}">
+                                    <button class="accordion-button text-uppercase fw-bold collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsePrograms{{ $heading->id }}"
+                                            aria-expanded="false"
+                                            aria-controls="collapsePrograms{{ $heading->id }}">
+                                        {{ $heading->title ?? 'Programs Table' }}
+                                    </button>
+                                </h2>
+                                <div id="collapsePrograms{{ $heading->id }}" class="accordion-collapse collapse"
+                                     aria-labelledby="headingPrograms{{ $heading->id }}"
+                                     data-bs-parent="#programsAccordion">
+                                    <div class="accordion-body">
+                                        @include('/headings/admin')
+                                        <table class="table mb-0">
+                                            @if($heading->head1)
+                                                <thead>
+                                                <tr class="table-head">
+                                                    <th>{{ $heading->head1 }}</th>
+                                                    <th>{{ $heading->head2 }}</th>
+                                                    <th>{{ $heading->head3 }}</th>
+                                                    <th>{{ $heading->head4 }}</th>
+                                                </tr>
+                                                </thead>
+                                            @endif
+                                            @livewire('tables-table', ['program' => $program])
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         @endif
                     @endforeach
+                </div>
 
-                    @livewire('tables-table', ['program' => $program])
-                </table>
+
+
+
             </div>
 {{--            @if($program->id == 3)--}}
                 <div class="col-sm my-3">
@@ -132,26 +153,47 @@
                             @include('/tables/form')
                         </div>
                     @endcan
-                    <table class="table mb-0">
+
+                    <div class="accordion my-3" id="programs2Accordion">
                         @foreach($headings as $heading)
                             @if($heading->headingName == 'programs2' && $heading->headingSection == "$program->id")
-                                <h2 class="table-title">{{ $heading->title }}</h2>
-                                @include('/headings/admin')
-                                @if($heading->head1 == true)
-                                    <thead>
-                                    <tr class="table-head">
-                                        <th>{{ $heading->head1 }}</th>
-                                        <th>{{ $heading->head2 }}</th>
-                                        <th>{{ $heading->head3 }}</th>
-                                        <th>{{ $heading->head4 }}</th>
-                                    </tr>
-                                    </thead>
-                                @endif
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" style="text-transform: uppercase;" id="headingPrograms2{{ $heading->id }}">
+                                        <button class="accordion-button text-uppercase fw-bold collapsed" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#collapsePrograms2{{ $heading->id }}"
+                                                aria-expanded="false"
+                                                aria-controls="collapsePrograms2{{ $heading->id }}">
+                                            {{ $heading->title ?? 'Programs 2 Table' }}
+                                        </button>
+                                    </h2>
+                                    <div id="collapsePrograms2{{ $heading->id }}" class="accordion-collapse collapse"
+                                         aria-labelledby="headingPrograms2{{ $heading->id }}"
+                                         data-bs-parent="#programs2Accordion">
+                                        <div class="accordion-body">
+                                            @include('/headings/admin')
+                                            <table class="table mb-0">
+                                                @if($heading->head1)
+                                                    <thead>
+                                                    <tr class="table-head">
+                                                        <th>{{ $heading->head1 }}</th>
+                                                        <th>{{ $heading->head2 }}</th>
+                                                        <th>{{ $heading->head3 }}</th>
+                                                        <th>{{ $heading->head4 }}</th>
+                                                    </tr>
+                                                    </thead>
+                                                @endif
+                                                @livewire('sets-table', ['program' => $program])
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
                             @endif
                         @endforeach
+                    </div>
 
-                    @livewire('sets-table', ['program' => $program])
-                    </table>
+
+
                 </div>
 
             <div class="col-sm my-3">
@@ -179,26 +221,46 @@
             @endcan
             <!-- END TABLE CONTROL -->
 
-                <table class="table mb-0">
+                <div class="accordion my-3" id="programs3Accordion">
                     @foreach($headings as $heading)
-                        @if($heading->headingName == "programs3" && $heading->headingSection == "$program->id")
-                            <h2 class="table-title">{{ $heading->title }}</h2>
-                            @include('/headings/admin')
-                            @if($heading->head1 == true)
-                                <thead>
-                                <tr class="table-head">
-                                    <th>{{ $heading->head1 }}</th>
-                                    <th>{{ $heading->head2 }}</th>
-                                    <th>{{ $heading->head3 }}</th>
-                                    <th>{{ $heading->head4 }}</th>
-                                </tr>
-                                </thead>
-                            @endif
+                        @if($heading->headingName == 'programs3' && $heading->headingSection == "$program->id")
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingPrograms3{{ $heading->id }}">
+                                    <button class="accordion-button text-uppercase fw-bold collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#collapsePrograms3{{ $heading->id }}"
+                                            aria-expanded="false"
+                                            aria-controls="collapsePrograms3{{ $heading->id }}">
+                                        {{ $heading->title ?? 'Programs 3 Table' }}
+                                    </button>
+                                </h2>
+                                <div id="collapsePrograms3{{ $heading->id }}" class="accordion-collapse collapse"
+                                     aria-labelledby="headingPrograms3{{ $heading->id }}"
+                                     data-bs-parent="#programs3Accordion">
+                                    <div class="accordion-body">
+                                        @include('/headings/admin')
+                                        <table class="table mb-0">
+                                            @if($heading->head1)
+                                                <thead>
+                                                <tr class="table-head">
+                                                    <th>{{ $heading->head1 }}</th>
+                                                    <th>{{ $heading->head2 }}</th>
+                                                    <th>{{ $heading->head3 }}</th>
+                                                    <th>{{ $heading->head4 }}</th>
+                                                </tr>
+                                                </thead>
+                                            @endif
+                                            @livewire('trios-table', ['program' => $program])
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         @endif
                     @endforeach
+                </div>
 
-                    @livewire('trios-table', ['program' => $program])
-                </table>
+
+
             </div>
 {{--            @endif--}}
         </div>
