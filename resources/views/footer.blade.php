@@ -49,6 +49,12 @@
                                 <li>
                                     <a href="https://link.enrollio.ai/widget/form/KGLRY0zZJC4E7vG4cXRG" target="_blank">National Honor Society of Dance Arts</a>
                                 </li>
+                                <li>
+                                    <a href="https://sites.google.com/view/breaking-ground-intensive/home?authuser=1" target="_blank">Intensive Program Portal</a>
+                                </li>
+                                <li>
+                                    <a href="https://breakinggrounddance.enrollioapp.com/your-first-year" target="_blank">First Year Student Website</a>
+                                </li>
                                 {{--                        <li>--}}
                                 {{--                            <a href="https://youtu.be/lcFVd9_ge50" data-bs-toggle="modal" data-bs-target="#studioModal">Studio</a>--}}
                                 {{--                        </li>--}}
