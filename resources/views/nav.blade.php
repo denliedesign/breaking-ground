@@ -3,7 +3,7 @@
         <img src="/images/bgdc-logo.png" alt="logo" class="img-fluid">
     </a>
 </div>
-<div class="d-flex justify-content-center mx-0" id="navigations">
+<div class="d-md-flex justify-content-center mx-0" id="navigations">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             {{--            <a class="navbar-brand" href="/">--}}

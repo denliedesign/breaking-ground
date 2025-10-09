@@ -108,11 +108,11 @@
             <form action="{{ route('sendFavoritesEmail') }}" method="post">
                 @csrf
                 @method('POST')
-                <div>
+                <div class="mx-2">
                     <label for="email">Enter your email:</label>
                     <input class="rounded" type="email" name="sendEmail" required>
                     <input type="hidden" name="sendEmailFlag" value="1"> <!-- Add hidden input to indicate email sending -->
-                    <button type="submit" class="btn text-white mx-2 btn-poison mt-2" style="background: #95A5A6; border: 1px solid #95A5A6;">
+                    <button type="submit" class="btn text-white btn-poison mt-2" style="background: #95A5A6; border: 1px solid #95A5A6;">
                         Send Favorites via Email
                     </button>
                 </div>
