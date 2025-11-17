@@ -55,6 +55,9 @@
                                 <li>
                                     <a href="https://breakinggrounddance.enrollioapp.com/your-first-year" target="_blank">First Year Student Website</a>
                                 </li>
+                                <li>
+                                    <a href="/images/policies-and-procedures.pdf" target="_blank">Policies & Procedures</a>
+                                </li>
                                 {{--                        <li>--}}
                                 {{--                            <a href="https://youtu.be/lcFVd9_ge50" data-bs-toggle="modal" data-bs-target="#studioModal">Studio</a>--}}
                                 {{--                        </li>--}}
