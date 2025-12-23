@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
 .numero {
     background: #DC3545;
     color: white;
-    padding: 0px 30px;
+    padding: 5px 20px;
     border-radius: 50%;
 }
 .styled-checkbox {

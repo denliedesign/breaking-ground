@@ -41,7 +41,7 @@
 
             <div class="mb-5"></div>
             <div>
-                <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 100px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 1</span>&nbsp;ages</div>
+                <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 70px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 1</span>&nbsp;ages</div>
             </div>
             <div class="row mt-2">
                 <x-checkbox category="age_requirement" info="6 months-24 months" />
@@ -55,7 +55,7 @@
 
             <div class="mb-5"></div>
             <div>
-                <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 100px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 2</span>&nbsp;styles</div>
+                <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 70px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 2</span>&nbsp;styles</div>
             </div>
             <div class="row mt-2">
                 <x-checkbox category="dance_style" info="ballet" />
@@ -77,7 +77,7 @@
 
             <div class="mb-5"></div>
             <div>
-                <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 100px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 3</span>&nbsp;days</div>
+                <div class="d-flex align-items-center justify-content-center quick p-0 m-0 text-center" style="font-size: 70px;"><span class="numero d-flex align-items-center"><span style="font-size: 25px;">step</span> 3</span>&nbsp;days</div>
             </div>
             <div class="row mt-2">
                 <x-checkbox category="day_of_week" info="Monday" />
