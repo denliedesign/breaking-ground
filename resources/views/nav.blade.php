@@ -29,9 +29,9 @@
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/programs">Classes</a>
                     </li>
-                    <li class="nav-item text-center mx-1" style="width: auto;">
-                        <a class="nav-link" href="https://breakinggrounddance.enrollioapp.com/class-inquiry" target="_blank">Class Inquiry</a>
-                    </li>
+{{--                    <li class="nav-item text-center mx-1" style="width: auto;">--}}
+{{--                        <a class="nav-link" href="https://breakinggrounddance.enrollioapp.com/class-inquiry" target="_blank">Class Inquiry</a>--}}
+{{--                    </li>--}}
                     <li class="nav-item text-center mx-1" style="width: auto;">
                         <a class="nav-link" href="/pricing">Pricing</a>
                     </li>

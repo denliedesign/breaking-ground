@@ -1,12 +1,13 @@
 <div style="background: #333; color: white;">
     <div class="container">
-        <div class="pt-3 pb-2 d-flex justify-content-center text-center" id="top-nav">
+        <div class="pt-3 pb-2 d-flex justify-content-center align-items-center text-center" id="top-nav">
             <div style="font-size: 0.85em;">
                 <ion-icon name="mail"></ion-icon> <a class="text-white" style="text-decoration: none;" href="mailto:breakinggrounddance@hotmail.com">breakinggrounddance@hotmail.com</a>
                 <div class="w-100 d-md-none my-2"></div>
                 &nbsp; <ion-icon name="call"></ion-icon> 914-747-3150
                 <div class="w-100 d-md-none my-2"></div>
                 &nbsp; <button data-bs-toggle="modal" data-bs-target="#enrollioModal" class="btn-opacity shadow btn btn-red btn-family">Get Started Today</button>
+                &nbsp; <a href="https://portal.akadadance.com/auth?schoolId=363" target="_blank"><div class="btn-opacity shadow btn btn-white-outline btn-family">Register</div></a>
                 <div class="w-100 d-md-none my-2"></div>
                 &nbsp; <a href="https://www.facebook.com/BGDC1?ref=hl" target="_blank" class="socials" style="font-size: 1.2em;"><ion-icon name="logo-facebook"></ion-icon></a>
                 &nbsp; <a href="https://www.instagram.com/breakingground/" target="_blank" class="socials" style="font-size: 1.2em;"><ion-icon name="logo-instagram"></ion-icon></a>

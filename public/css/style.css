@@ -132,6 +132,9 @@ h1, h2, h3, h4, h5, h6 {
 .btn-red-outline { border: 2px solid #dd3333; color: #dd3333 !important; }
 .btn-red-outline:hover { background: #dd3333; color: white !important; }
 
+.btn-white-outline { border: 2px solid white; color: white !important; transition: all 0.8s ease; }
+.btn-white-outline:hover { border: 2px solid #dd3333; color: #dd3333 !important; }
+
 .btn-family {
     color: white;
     border-radius: 30px;
