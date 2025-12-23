@@ -17,14 +17,14 @@
 {{--            <video width="320" height="180" controls>--}}
 {{--                <source src="{{ asset('/storage/' . $program->programVideo) }}" type="video/mp4">--}}
 {{--            </video>--}}
-            <div>
+            <div style="max-width: 560px !important; width: 100% !important; margin: 0 auto !important;">
                 {!! $program->programVideo !!}
             </div>
         </div>
 
             <div class="text-center">
                 <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">{{ $program->programTitle }}</span></h1>
-                <p>{!! $program->programDescription !!}</p>
+                <div style="font-size: 18.4px !important;">{!! $program->programDescription !!}</div>
             </div>
 
 
