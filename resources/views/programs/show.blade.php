@@ -24,7 +24,7 @@
 
             <div class="text-center">
                 <h1 class="text-center my-5"><span class="pages-heading px-5 py-3">{{ $program->programTitle }}</span></h1>
-                <div style="font-size: 18.4px !important;">{!! $program->programDescription !!}</div>
+                <div style="font-size: 18.4px !important;"><span style="font-size: 18.4px !important;">{!! $program->programDescription !!}</span></div>
             </div>
 
 
