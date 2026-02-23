@@ -6,6 +6,8 @@ use App\Models\DanceClass;
 use Illuminate\Support\Facades\Hash;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithUpserts;
+use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class DanceClassesImport implements ToModel, WithUpserts
 {

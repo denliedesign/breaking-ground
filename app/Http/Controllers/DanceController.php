@@ -7,6 +7,7 @@ use App\Mail\FavoritesEmail;
 use App\Models\DanceClass;
 use Barryvdh\DomPDF\PDF;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Maatwebsite\Excel\Facades\Excel;
 use Dompdf\Dompdf;
@@ -69,9 +70,18 @@ class DanceController extends Controller
             'your_file' => 'required|mimes:xlsx,xls',
         ]);
 
+        $file = $request->file('your_file');
+
         try {
-            Excel::import(new DanceClassesImport, $request->file('your_file'));
-            return redirect()->back()->with('success', 'Dance classes imported successfully!');
+            DB::transaction(function () use ($file) {
+                // Remove all existing classes (current season is replaced entirely)
+                DanceClass::query()->delete();
+
+                // Import the new spreadsheet as the source of truth
+                Excel::import(new DanceClassesImport, $file);
+            });
+
+            return redirect()->back()->with('success', 'Dance classes imported successfully (replaced all existing classes).');
         } catch (\Exception $e) {
             return redirect()->back()->with('error', 'Error importing dance classes: ' . $e->getMessage());
         }
