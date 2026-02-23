@@ -64,7 +64,7 @@
                 <x-checkbox category="dance_style" info="hip hop" />
                 <x-checkbox category="dance_style" info="contemporary" />
                 <x-checkbox category="dance_style" info="Acro" />
-                <x-checkbox category="dance_style" info="musical theater" />
+{{--                <x-checkbox category="dance_style" info="musical theater" />--}}
                 <div class="col-lg my-2" style="display: none;">
                     <input type="checkbox" class="form-check-input" id="creative_dance" name="dance_style[]" value="Creative Dance" checked hidden>
                     <label class="form-check-label ms-1 me-3" for="creative_dance"></label>
