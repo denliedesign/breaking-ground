@@ -10,6 +10,12 @@
         <div class="py-5">
 
             <x-heading title="Calendar" />
+            <div class="text-center my-4 d-print-none">
+                <a href="https://breakinggrounddance.enrollioapp.com/26-spin-sparkle-calendar"
+                   class="btn text-white btn-red">
+                    View Spin &amp; Sparkle Calendar
+                </a>
+            </div>
             {{--            <h2 class="text-center fw-bold mb-5">In-Studio & Virtual Parties available!</h2>--}}
             <div class="d-flex align-items-center justify-content-center my-4">
                 <!-- Download Button -->
