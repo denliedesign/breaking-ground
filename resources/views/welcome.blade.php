@@ -280,9 +280,6 @@
                             <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="3" aria-label="Slide 4"></button>
                             <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="5" aria-label="Slide 6"></button>
-{{--                            <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="6" aria-label="Slide 7"></button>--}}
-{{--                            <button type="button" data-bs-target="#carouselTestimonial" data-bs-slide-to="7" aria-label="Slide 8"></button>--}}
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -295,51 +292,21 @@
                                     </div>
                                     <div class="col-sm-9">
                                         <div class="p-3">
+                                            <p class="txt-red mb-2" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
                                             <p class="d-none d-md-block mb-0" style="font-size: 1em;">
-                                                My daughter is in her 3rd year attending Breaking Ground Dance Center and she really enjoys it!  She has also participated in some of the week-long summer camps and week-long camps during school holidays. The most recent camp she attended was the week of February break and she loved it! Her teacher always makes the activities very engaging and fun! Thank you to all of the staff at Breaking Ground Dance Center for truly making it a friendly and nurturing learning environment where students can flourish!
+                                                We&#39;ve been taking dance at Breaking Ground for the last two years and it has been a fantastic experience. Very organized, great communication and the building is beautiful.
                                             </p>
-                                            <p class="d-block d-md-none mb-0" style="font-size: 0.6em;">
-                                                My daughter is in her 3rd year attending Breaking Ground Dance Center and she really enjoys it!  She has also participated in some of the week-long summer camps and week-long camps during school holidays. The most recent camp she attended was the week of February break and she loved it! Her teacher always makes the activities very engaging and fun! Thank you to all of the staff at Breaking Ground Dance Center for truly making it a friendly and nurturing learning environment where students can flourish!
+                                            <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
+                                                We&#39;ve been taking dance at Breaking Ground for the last two years and it has been a fantastic experience. Very organized, great communication and the building is beautiful.
                                             </p>
                                             <div class="d-flex align-items-center">
-                                                {{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-                                                &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.1em;">-Rosanna Maiuolo</span>
-                                                <span class="lead d-block d-md-none" style="font-size: 0.6em;">-Rosanna Maiuolo</span>
+                                                &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.1em;">-Emily Hart</span>
+                                                <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Emily Hart</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-{{--                            <div class="carousel-item active">--}}
-{{--                                <div class="px-4 py-3">--}}
-{{--                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">--}}
-{{--                                        Thank you for all that you have done this year to make Ellie’s first year incredible.  Having her former studio close during the pandemic, although unfortunate, led her to BGDC and I think it was a blessing.   Besides the dancing, which is incredible, the emphasis on team building and sisterhood is so important.  Kids need this more than ever.   BGDC is truly amazing, like no other studio.  Ellie has had the chance to grow and thrive.--}}
-{{--                                    </p>--}}
-{{--                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">--}}
-{{--                                        Thank you for all that you have done this year to make Ellie’s first year incredible.  Having her former studio close during the pandemic, although unfortunate, led her to BGDC and I think it was a blessing.   Besides the dancing, which is incredible, the emphasis on team building and sisterhood is so important.  Kids need this more than ever.   BGDC is truly amazing, like no other studio.  Ellie has had the chance to grow and thrive.--}}
-{{--                                    </p>--}}
-{{--                                    <div class="d-flex align-items-center">--}}
-{{--                                        --}}{{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-{{--                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Erin Baker</span>--}}
-{{--                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Erin Baker</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-{{--                            <div class="carousel-item">--}}
-{{--                                <div class="px-4 py-3">--}}
-{{--                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">--}}
-{{--                                        The 2020 recital was truly perfect! The shows were beautifully run, well organized, fun, and COVID safe.  We loved the special touches like the gorgeous balloon displays, photo backdrops, and signs recognizing 5/10 year students and graduating seniors.  We noticed every detail and loved it all!  Thanks again for making BGDC a great dance home for our girls.--}}
-{{--                                    </p>--}}
-{{--                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">--}}
-{{--                                        The 2020 recital was truly perfect! The shows were beautifully run, well organized, fun, and COVID safe.  We loved the special touches like the gorgeous balloon displays, photo backdrops, and signs recognizing 5/10 year students and graduating seniors.  We noticed every detail and loved it all!  Thanks again for making BGDC a great dance home for our girls.--}}
-{{--                                    </p>--}}
-{{--                                    <div class="d-flex align-items-center">--}}
-{{--                                        --}}{{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-{{--                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Rebecca Shaw</span>--}}
-{{--                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Rebecca Shaw</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
                             <div class="carousel-item">
                                 <div class="row p-2 p-md-3">
                                     <div class="col-sm-3">
@@ -349,86 +316,19 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div class="p-3">
-                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
-                                        Our daughter Sophia had an amazing experience at her recital! This year has taught her to come out of her shell a bit more and really boost her confidence with the help of Breaking Ground! Hats off to Marissa and the entire staff for doing such an amazing job of keeping our kids safe and smiling the whole year!
-                                    </p>
-                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
-                                        Our daughter Sophia had an amazing experience at her recital! This year has taught her to come out of her shell a bit more and really boost her confidence with the help of Breaking Ground! Hats off to Marissa and the entire staff for doing such an amazing job of keeping our kids safe and smiling the whole year!
-                                    </p>
-                                    <div class="d-flex align-items-center">
-                                        {{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Valerie Racanelli</span>
-                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Valerie Racanelli</span>
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row p-1 p-md-2">
-                                    <div class="col-sm-3">
-                                        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
-                                            <img src="/images/guarantee.png" alt="parent satisfaction guarantee" class="img-fluid d-none d-md-block">
-                                            <img src="/images/guarantee.png" alt="parent satisfaction guarantee" class="img-fluid d-block d-md-none" style="height: 60px; width: auto;">
+                                        <div class="p-3">
+                                            <p class="txt-red mb-2" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+                                            <p class="d-none d-md-block mb-0" style="font-size: 1em;">
+                                                My girls have been at Breaking Ground since they were 2 years old. It’s been such an incredible experience to watch them grow, have fun and build confidence. The instructors have been incredible!
+                                            </p>
+                                            <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
+                                                My girls have been at Breaking Ground since they were 2 years old. It’s been such an incredible experience to watch them grow, have fun and build confidence. The instructors have been incredible!
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.1em;">-Francesca Fernandez</span>
+                                                <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Francesca Fernandez</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-sm-9">
-                                <div class="p-3">
-                                    <p class="d-none d-md-block mb-0" style="font-size: 1em;">
-                                        My daughter Ella, a graduating senior and Senior Company member, ended her competition season on a perfect note with her best friend Lauren at her side.  The girls took one last picture together on stage and looking back, it really depicts the strong friendships that my daughter has gained through BG.  It was great that Ella and Lauren ended their time at BG together.  They still talk about how their friendship began with they were in Petite Ensemble.  Thank you to Marissa and her team for all they have done for Ella.  When she was 9, I remember asking her what she loves the most about dance and she said it made her feel free and that she can be herself.  I will always remember that!
-                                        <span class="d-none d-md-inline"> -Teresa Agabob</span>
-                                    </p>
-                                    <p class="d-block d-md-none mb-0" style="font-size: 0.6em;">
-                                        My daughter Ella, a graduating senior and Senior Company member, ended her competition season on a perfect note with her best friend Lauren at her side.  The girls took one last picture together on stage and looking back, it really depicts the strong friendships that my daughter has gained through BG.  It was great that Ella and Lauren ended their time at BG together.  They still talk about how their friendship began with they were in Petite Ensemble.  Thank you to Marissa and her team for all they have done for Ella.  When she was 9, I remember asking her what she loves the most about dance and she said it made her feel free and that she can be herself.  I will always remember that!
-                                        <span class="d-inline d-md-none"> -Teresa Agabob</span>
-                                    </p>
-                                    <div class="d-flex align-items-center">
-                                        {{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-                                        &nbsp;
-
-                                    </div>
-                                </div>
-                                    </div>
-                                </div>
-                            </div>
-{{--                            <div class="carousel-item">--}}
-{{--                                <div class="px-4 py-3">--}}
-{{--                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">--}}
-{{--                                        Breaking Ground Dance Center has boys in different classes and age groups. What I like about this school is that the schedule and expectations are shared with everyone early and the bill includes photography and costumes.  The kids quickly welcome new comers. No drama or unnecessary competitiveness.  We tried a class and stayed. Additionally, they will have an expanded, renovated, space for all to enjoy including a homework/collaborative area <ion-icon name="heart"></ion-icon>--}}
-{{--                                    </p>--}}
-{{--                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">--}}
-{{--                                        Breaking Ground Dance Center has boys in different classes and age groups. What I like about this school is that the schedule and expectations are shared with everyone early and the bill includes photography and costumes.  The kids quickly welcome new comers. No drama or unnecessary competitiveness.  We tried a class and stayed. Additionally, they will have an expanded, renovated, space for all to enjoy including a homework/collaborative area <ion-icon name="heart"></ion-icon>--}}
-{{--                                    </p>--}}
-{{--                                    <div class="d-flex align-items-center">--}}
-{{--                                        --}}{{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-{{--                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Yvonne Last</span>--}}
-{{--                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Yvonne Last</span>--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
-                            <div class="carousel-item">
-                                <div class="row p-2 p-md-3">
-                                    <div class="col-sm-3">
-                                        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
-                                            <img src="/images/guarantee.png" alt="parent satisfaction guarantee" class="img-fluid d-none d-md-block">
-                                            <img src="/images/guarantee.png" alt="parent satisfaction guarantee" class="img-fluid d-block d-md-none" style="height: 60px; width: auto;">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-9">
-                                <div class="p-3">
-                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
-                                        My daughter has not only learned dance skills, but she has also made wonderful friends, gained confidence & self-esteem, & learned life skills. We truly love this school & all its teachers.
-                                    </p>
-                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
-                                        My daughter has not only learned dance skills, but she has also made wonderful friends, gained confidence & self-esteem, & learned life skills. We truly love this school & all its teachers.
-                                    </p>
-                                    <div class="d-flex align-items-center">
-                                        {{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Norma Klein</span>
-                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Norma Klein</span>
-                                    </div>
-                                </div>
                                     </div>
                                 </div>
                             </div>
@@ -441,19 +341,19 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div class="p-3">
-                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
-                                        BG is my daughter’s favorite place on earth. She loves taking challenging classes and learning from the outstanding teachers. She couldn’t be happier there and as a parent that’s what makes me happy. This is our 7th year!
-                                    </p>
-                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
-                                        BG is my daughter’s favorite place on earth. She loves taking challenging classes and learning from the outstanding teachers. She couldn’t be happier there and as a parent that’s what makes me happy. This is our 7th year!
-                                    </p>
-                                    <div class="d-flex align-items-center">
-                                        {{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Alissa Dorfman</span>
-                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Alissa Dorfman</span>
-                                    </div>
-                                </div>
+                                        <div class="p-3">
+                                            <p class="txt-red mb-2" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+                                            <p class="d-none d-md-block mb-0" style="font-size: 1em;">
+                                                Amazing studio. From the knowledge and instructional ability of the teachers to the impressive organization and clear communication home, this studio is above and beyond. The professionalism and quality of performance is elite. I would recommend this studio to anyone who wants their child to have a memorable performing arts experience in the realm of dance!
+                                            </p>
+                                            <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
+                                                Amazing studio. From the knowledge and instructional ability of the teachers to the impressive organization and clear communication home, this studio is above and beyond. The professionalism and quality of performance is elite. I would recommend this studio to anyone who wants their child to have a memorable performing arts experience in the realm of dance!
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.1em;">-Erin Sica</span>
+                                                <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Erin Sica</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -466,19 +366,44 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-9">
-                                <div class="p-3">
-                                    <p class="d-none d-md-block mb-0" style="font-size: 1.2em;">
-                                        BG is filled with nurturing, talented staff. My daughters love being there, learning and being with friends. It is filled with positivity and they are bringing that home with them. Thank you!
-                                    </p>
-                                    <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
-                                        BG is filled with nurturing, talented staff. My daughters love being there, learning and being with friends. It is filled with positivity and they are bringing that home with them. Thank you!
-                                    </p>
-                                    <div class="d-flex align-items-center">
-                                        {{--                                   <ion-icon name="person-circle-outline" style="font-size: 2em; color: #d33;"></ion-icon>--}}
-                                        &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.2em;">-Becky Hanifin</span>
-                                        <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Becky Hanifin</span>
+                                        <div class="p-3">
+                                            <p class="txt-red mb-2" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+                                            <p class="d-none d-md-block mb-0" style="font-size: 1em;">
+                                                BGDC is a 2nd home for both of my girls! The teachers are amazing, the facility is clean, the recital and attention to details is unmatched! We would highly recommend this studio.
+                                            </p>
+                                            <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
+                                                BGDC is a 2nd home for both of my girls! The teachers are amazing, the facility is clean, the recital and attention to details is unmatched! We would highly recommend this studio.
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.1em;">-Kristyna Russo</span>
+                                                <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Kristyna Russo</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row p-2 p-md-3">
+                                    <div class="col-sm-3">
+                                        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                                            <img src="/images/guarantee.png" alt="parent satisfaction guarantee" class="img-fluid d-none d-md-block">
+                                            <img src="/images/guarantee.png" alt="parent satisfaction guarantee" class="img-fluid d-block d-md-none" style="height: 60px; width: auto;">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="p-3">
+                                            <p class="txt-red mb-2" role="img" aria-label="5 out of 5 stars"><span aria-hidden="true">&#9733; &#9733; &#9733; &#9733; &#9733;</span></p>
+                                            <p class="d-none d-md-block mb-0" style="font-size: 1em;">
+                                                I can’t say enough great things about Breaking Ground Dance Center. We started here when my oldest was just 2.5 years old and now have both my daughters in various dance classes. The teachers are so talented and sweet- my girls look forward to coming every week. The studio is super organized and professional. As a dancer for 16 years growing up, Breaking Ground has exceeded my expectations! We look forward to many years ahead!
+                                            </p>
+                                            <p class="d-block d-md-none mb-0" style="font-size: 0.7em;">
+                                                I can’t say enough great things about Breaking Ground Dance Center. We started here when my oldest was just 2.5 years old and now have both my daughters in various dance classes. The teachers are so talented and sweet- my girls look forward to coming every week. The studio is super organized and professional. As a dancer for 16 years growing up, Breaking Ground has exceeded my expectations! We look forward to many years ahead!
+                                            </p>
+                                            <div class="d-flex align-items-center">
+                                                &nbsp; <span class="lead d-none d-md-block" style="font-size: 1.1em;">-Lauren Cipriano</span>
+                                                <span class="lead d-block d-md-none" style="font-size: 0.7em;">-Lauren Cipriano</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
